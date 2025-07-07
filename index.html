@@ -18,192 +18,180 @@
 
   <!-- Optional internal override -->
   <style>
+    body {
+      background-color: #0d1b2a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .intro-screen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #fff;
+      animation: typing 4s steps(30, end) forwards, blink 0.8s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    #main-content {
+      display: none;
+    }
+
     @media (max-width: 991.98px) {
       .navbar-collapse {
-        background-color: rgba(33, 37, 41, 0.95); /* bg-dark semi transparan */
+        background-color: rgba(33, 37, 41, 0.95);
         padding: 1rem;
         border-radius: 0.5rem;
       }
     }
   </style>
 </head>
-<body class="bg-dark">
+<body>
 
-  <!-- Navbar Full Width -->
-  <header class="main-header bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
+  <!-- INTRO SCREEN -->
+  <div id="intro" class="intro-screen">Hello, Welcome To My Portfolio</div>
 
-      <a class="navbar-brand" href="/">
-        <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="mainMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
-        <ul class="navbar-nav ms-auto text-uppercase gap-2">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="myskill.html" class="nav-link">MySkill</a>
-          </li>
-          <li class="nav-item">
-            <a href="portofolio.html" class="nav-link">Portofolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Header Section -->
-  <section class="py-5 bg-secondary text-white position-relative bg-dark">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start">
-          <h1 class="display-1 fw-bold">Hi, I am</h1>
-          <h2 class="fw-medium">Rafly Fadriansyah Ramadhani</h2>
-          <p class="fs-4 fw-light">Undergraduate <br />System Information</p>
-          <p class="fs-5">At <br />Gunadarma University</p>
+  <!-- MAIN CONTENT -->
+  <div id="main-content">
+    <!-- Navbar -->
+    <header class="main-header bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
+        <a class="navbar-brand" href="/">
+          <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
+          <ul class="navbar-nav ms-auto text-uppercase gap-2">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="myskill.html" class="nav-link">MySkill</a>
+            </li>
+            <li class="nav-item">
+              <a href="portofolio.html" class="nav-link">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-6 text-center">
-          <img
-            src="assets/img/foto_diri_tpbg.png "
-            alt="Profile"
-            class="img-fluid rounded shadow w-50 w-md-75 w-lg-100 mx-auto d-block"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+      </nav>
+    </header>
 
-  <!-- Social Media Section -->
-  <section class="py-2 bg-light border-top">
-    <div class="container">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <h3 class="fw-bold mb-3 mb-md-0">Linkedin Account</h3>
-        <div class="d-flex align-items-center gap-3">
-          <img
-            src="assets/img/linkedin.png"
-            alt="Social Icon"
-            class="rounded"
-            style="width: 50px"
-          />
-          <a
-            href="https://www.linkedin.com/in/rafly-fadriasnyah-ramadhani/"
-            target="_blank"
-            class="text-decoration-none text-secondary fs-5 fw-light"
-          >
-            Rafly Fadriansyah Ramadhani
-          </a>
+    <!-- Header Section -->
+    <section class="py-5 bg-secondary text-white position-relative bg-dark">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <h1 class="display-1 fw-bold">Hi, I am</h1>
+            <h2 class="fw-medium">Rafly Fadriansyah Ramadhani</h2>
+            <p class="fs-4 fw-light">Undergraduate <br />System Information</p>
+            <p class="fs-5">At <br />Gunadarma University</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="assets/img/foto_diri_tpbg.png"
+              alt="Profile"
+              class="img-fluid rounded shadow w-50 w-md-75 w-lg-100 mx-auto d-block"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Extra Content Section -->
-  <section class="py-5 bg-dark text-white">
-    <div class="container text-center">
-      <h4 class="mb-4">About Me</h4>
-      <div class="d-flex justify-content-center gap-4">
-        <p>
-          Mahasiswa semester 6 Program Studi Sistem Informasi di Universitas Gunadarma dengan fokus utama pada pengembangan website seperti UI/UX, HTML, CSS, PHP. Saya fleksibel, kreatif, dan berpikiran terbuka, serta mampu bekerja secara mandiri atau kelompok dengan memanfaatkan keterampilan kepemimpinan dan manajemen proyek yang saya peroleh melalui keterlibatan aktif di Badan Eksekutif Mahasiswa. Selain itu, minat saya yang tinggi dalam bidang UI/UX, Data Analyst membuat saya mendalami kedua bidang tersebut. sehingga dapat memberikan solusi inovatif yang mendukung pengambilan keputusan yang lebih baik.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Penjelasan Logo -->
-  <div class="container my-5 bg-dark text-white">
-    <div class="row align-items-center">
-      <!-- Gambar Logo -->
-      <div class="col-md-6 text-center">
-        <img src="assets/img/Logo.png" alt="Logo" class="img-fluid shadow w-50 w-md-75 w-lg-50 mx-auto d-block">
-      </div>
-
-      <!-- Penjelasan Teks -->
-      <div class="col-md-6">
-        <h4 class="text-center mb-3">Penjelasan Logo</h4>
-        <p class="text-justify">
-          Logo ini merupakan representasi visual dari inisial nama saya, Rafly Fadriansyah Ramadhani, yang disingkat menjadi RFR. Desain logo mengusung konsep minimalis dan modern, yang sejalan dengan prinsip desain saya dalam bidang UI/UX: sederhana, fungsional, dan estetis.
-          <br>
-          Penggunaan bentuk huruf yang tegas dan simetris mencerminkan konsistensi, profesionalisme, dan struktur berpikir sistematis karakter yang penting dalam dunia desain dan pengembangan sistem informasi. Potongan garis diagonal pada huruf tengah menambahkan nuansa dinamis dan futuristik, menunjukkan kemauan untuk terus berkembang dan berinovasi.
-          <br>
-          Warna biru tua dipilih untuk memberikan kesan stabilitas, kepercayaan, dan ketegasan, yang merefleksikan pendekatan saya dalam menyelesaikan proyek: fokus, terarah, dan bertanggung jawab.
-          <br>
-          Secara keseluruhan, logo ini bukan hanya lambang identitas personal, tetapi juga sebuah pernyataan visual tentang gaya kerja dan nilai profesional yang saya pegang dalam dunia desain digital.
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-
-  <footer class=" text-center bg-dark">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0 ">
-    <!-- Section: Social media -->
-    <section class="mb-4 ">
-      <!-- Facebook -->
-      <a
-      data-mdb-ripple-init
-        class="btn text-white btn-floating m-1  btn-dark"
-        href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID"
-        role="button"
-        ><i class="fab fa-facebook-f">Facebook</i
-      ></a>
-
-
-      <!-- Instagram -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1  btn-dark"
-        
-        href="https://www.instagram.com/rafadhan_19/"
-        role="button"
-        ><i class="fab fa-instagram">Instagram</i
-      ></a>
-
-      <!-- Linkedin -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1  btn-dark"
-        
-        href="https://www.linkedin.com/in/rafly-fadriasnyah-ramadhani/"
-        role="button"
-        ><i class="fab fa-linkedin-in">Linkedin</i
-      ></a>
-      <!-- Github -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1 btn-dark"
-        
-        href="https://github.com/rafly1911"
-        role="button"
-        ><i class="fab fa-github">Github</i
-      ></a>
     </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: #ffff;">
-    © 2025 Copyright:
-    <a class="text-body" href="https://www.instagram.com/rafadhan_19/">Rafly Fadriansyah Ramadhani</a>
+    <!-- Social Media Section -->
+    <section class="py-2 bg-light border-top">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <h3 class="fw-bold mb-3 mb-md-0">Linkedin Account</h3>
+          <div class="d-flex align-items-center gap-3">
+            <img src="assets/img/linkedin.png" alt="Social Icon" class="rounded" style="width: 50px" />
+            <a
+              href="https://www.linkedin.com/in/rafly-fadriasnyah-ramadhani/"
+              target="_blank"
+              class="text-decoration-none text-secondary fs-5 fw-light"
+            >
+              Rafly Fadriansyah Ramadhani
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="py-5 bg-dark text-white">
+      <div class="container text-center">
+        <h4 class="mb-4">About Me</h4>
+        <div class="d-flex justify-content-center gap-4">
+          <p>
+            Mahasiswa semester 6 Program Studi Sistem Informasi di Universitas Gunadarma dengan fokus utama pada pengembangan website seperti UI/UX, HTML, CSS, PHP. Saya fleksibel, kreatif, dan berpikiran terbuka, serta mampu bekerja secara mandiri atau kelompok dengan memanfaatkan keterampilan kepemimpinan dan manajemen proyek yang saya peroleh melalui keterlibatan aktif di Badan Eksekutif Mahasiswa. Selain itu, minat saya yang tinggi dalam bidang UI/UX, Data Analyst membuat saya mendalami kedua bidang tersebut. sehingga dapat memberikan solusi inovatif yang mendukung pengambilan keputusan yang lebih baik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Penjelasan Logo -->
+    <div class="container my-5 bg-dark text-white">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="assets/img/Logo.png" alt="Logo" class="img-fluid shadow w-50 w-md-75 w-lg-50 mx-auto d-block">
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-center mb-3">Penjelasan Logo</h4>
+          <p class="text-justify">
+            Logo ini merupakan representasi visual dari inisial nama saya, Rafly Fadriansyah Ramadhani, yang disingkat menjadi RFR. Desain logo mengusung konsep minimalis dan modern, yang sejalan dengan prinsip desain saya dalam bidang UI/UX: sederhana, fungsional, dan estetis.
+            <br>
+            Penggunaan bentuk huruf yang tegas dan simetris mencerminkan konsistensi, profesionalisme, dan struktur berpikir sistematis karakter yang penting dalam dunia desain dan pengembangan sistem informasi. Potongan garis diagonal pada huruf tengah menambahkan nuansa dinamis dan futuristik, menunjukkan kemauan untuk terus berkembang dan berinovasi.
+            <br>
+            Warna biru tua dipilih untuk memberikan kesan stabilitas, kepercayaan, dan ketegasan, yang merefleksikan pendekatan saya dalam menyelesaikan proyek: fokus, terarah, dan bertanggung jawab.
+            <br>
+            Secara keseluruhan, logo ini bukan hanya lambang identitas personal, tetapi juga sebuah pernyataan visual tentang gaya kerja dan nilai profesional yang saya pegang dalam dunia desain digital.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <h3 class="text-white">Follow Me On</h3>
+          <a class="btn text-white btn-floating m-1 btn-dark" href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID"><i>Facebook</i></a>
+          <a class="btn text-white btn-floating m-1 btn-dark" href="https://www.instagram.com/rafadhan_19/"><i>Instagram</i></a>
+          <a class="btn text-white btn-floating m-1 btn-dark" href="https://www.linkedin.com/in/rafly-fadriasnyah-ramadhani/"><i>Linkedin</i></a>
+          <a class="btn text-white btn-floating m-1 btn-dark" href="https://github.com/rafly1911"><i>Github</i></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: #ffff;">
+        © 2025 Copyright:
+        <a class="text-body" href="https://www.instagram.com/rafadhan_19/">Rafly Fadriansyah Ramadhani</a>
+      </div>
+    </footer>
   </div>
-  <!-- Copyright -->
-  </footer>
 
   <!-- Bootstrap JS -->
   <script
@@ -216,5 +204,14 @@
     integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
     crossorigin="anonymous"
   ></script>
+
+  <!-- JavaScript untuk transisi -->
+  <script>
+    setTimeout(() => {
+      document.getElementById("intro").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+      document.body.style.overflow = "auto";
+    }, 5000);
+  </script>
 </body>
 </html>
