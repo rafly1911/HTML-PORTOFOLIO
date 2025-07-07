@@ -91,10 +91,14 @@
               <input type="hidden" name="_next" value="https://yourwebsite.com/thanks">
 
               <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary btn-lg px-4">Send Message</button>
+                <button type="submit" class="btn btn-primary btn-lg px-4 btn btn-light" onclick="document.getElementById('alertBox').style.opacity = 1;">Send Message</button>
               </div>
             </div>
           </form>
+          <!-- Tambahkan ini di dalam <div class="col-lg-7">, setelah </form> -->
+          <div id="alertBox" class="alert alert-success text-center mt-4" style="opacity: 0; transition: opacity 0.6s;">
+            Pesan Anda telah berhasil dikirim!
+          </div>
         </div>
 
         <!-- Contact Info -->
@@ -102,7 +106,7 @@
             <div class="single_address mb-4">
               <i class="fa fa-map-marker"></i>
               <h4>Address</h4>
-              <p>50, Kota Bambu Selatan, Jakarta Barat, DKI Jakarta</p>
+              <p>Kota Bambu Selatan, Jakarta Barat, DKI Jakarta</p>
             </div>
             <div class="single_address mb-4">
               <i class="fa fa-envelope"></i>
