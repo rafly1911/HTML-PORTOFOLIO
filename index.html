@@ -14,43 +14,57 @@
   />
 
   <!-- Custom CSS -->
-<link href="assets/css/app.css" rel="stylesheet" />
+  <link href="assets/css/app.css" rel="stylesheet" />
+
+  <!-- Optional internal override -->
+  <style>
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        background-color: rgba(33, 37, 41, 0.95); /* bg-dark semi transparan */
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body class="bg-light">
 
-  <!-- Navbar (salin manual isi dari partials.nav jika diperlukan) -->
-  <!-- Contoh Navbar -->
-    <header class="main-header">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg main-nav px-0">
-        <a class="navbar-brand" href="/">
-            <img src="assets/img/logo.png" alt="Fadriansyah.Com" />
-        </a>    
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainMenu"
-            aria-controls="mainMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="icon-bar icon-bar-1"></span>
-            <span class="icon-bar icon-bar-2"></span>
-            <span class="icon-bar icon-bar-3"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto text-uppercase f1">
-            <li><a href="index.html" class="active active-first">Home</a></li>
-            <li><a href="myskill.html">MySkill</a></li>
-            <li><a href="portofolio.html">Portofolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        </nav>
-    </div>
-    </header>
+  <!-- Navbar Full Width -->
+  <header class="main-header bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
 
+      <a class="navbar-brand" href="/">
+        <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainMenu"
+        aria-controls="mainMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
+        <ul class="navbar-nav ms-auto text-uppercase gap-2">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="myskill.html" class="nav-link">MySkill</a>
+          </li>
+          <li class="nav-item">
+            <a href="portofolio.html" class="nav-link">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!-- Header Section -->
   <section class="py-5 bg-secondary text-white position-relative bg-dark">
@@ -66,8 +80,7 @@
           <img
             src="assets/img/fotodiri.png"
             alt="Profile"
-            class="img-fluid"
-            style="max-width: 500px"
+            class="img-fluid w-100 w-md-75 w-lg-50 mx-auto d-block"
           />
         </div>
       </div>

@@ -10,31 +10,54 @@
   
   <!-- Custom CSS -->
   <link href="assets/css/app.css" rel="stylesheet" />
+
+  <style>
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        background-color: rgba(33, 37, 41, 0.95);
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body class="bg-light">
 
-  <!-- Navbar Static Manual (copy dari contact.html) -->
-  <header class="main-header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg main-nav px-0">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/logo.png" alt="Fadriansyah.Com" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar icon-bar-1"></span>
-          <span class="icon-bar icon-bar-2"></span>
-          <span class="icon-bar icon-bar-3"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainMenu">
-          <ul class="navbar-nav ms-auto text-uppercase f1">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="myskill.html" class="active active-first">MySkill</a></li>
-            <li><a href="portofolio.html">Portofolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+  <!-- Navbar Full Width -->
+  <header class="main-header bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
+
+      <a class="navbar-brand" href="/">
+        <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainMenu"
+        aria-controls="mainMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
+        <ul class="navbar-nav ms-auto text-uppercase gap-2">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="myskill.html" class="nav-link">MySkill</a>
+          </li>
+          <li class="nav-item">
+            <a href="portofolio.html" class="nav-link">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <!-- Skill Section -->
@@ -46,19 +69,19 @@
       <!-- Baris Pertama -->
       <div class="row justify-content-center text-center mb-5">
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/figma.png" alt="Figma" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/figma.png" alt="Figma" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Figma</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/html_5.png" alt="HTML" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/html_5.png" alt="HTML" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">HTML</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/bootstrap.png" alt="Bootstrap" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/bootstrap.png" alt="Bootstrap" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Bootstrap</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/laravel 1.png" alt="Laravel" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/laravel 1.png" alt="Laravel" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Laravel</h5>
         </div>
       </div>
@@ -66,19 +89,19 @@
       <!-- Baris Kedua -->
       <div class="row justify-content-center text-center mb-5">
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/Canva.png" alt="Canva" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/Canva.png" alt="Canva" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Canva</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/css_3.png" alt="CSS" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/css_3.png" alt="CSS" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">CSS</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/mysql.png" alt="MySQL" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/mysql.png" alt="MySQL" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">MySQL</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/Frame 2.png" alt="Power BI" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/Frame 2.png" alt="Power BI" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Power BI</h5>
         </div>
       </div>
@@ -87,19 +110,19 @@
       <h2 class="fw-light mb-5">Learning</h2>
       <div class="row justify-content-center text-center mb-5">
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/Oracle.png" alt="Oracle" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/Oracle.png" alt="Oracle" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Oracle</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/Javascript.png" alt="JavaScript" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/Javascript.png" alt="JavaScript" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">JavaScript</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/python.png" alt="Python" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/python.png" alt="Python" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Python</h5>
         </div>
         <div class="col-6 col-md-3 mb-4">
-          <img src="assets/img/adobe_lightroom.png" alt="Adobe Lightroom" style="width: 60px; height: 60px;" class="mb-2" />
+          <img src="assets/img/adobe_lightroom.png" alt="Adobe Lightroom" class="mb-2" style="width: 60px; height: 60px;" />
           <h5 class="m-0">Adobe Lightroom</h5>
         </div>
       </div>
