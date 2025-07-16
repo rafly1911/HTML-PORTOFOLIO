@@ -199,6 +199,16 @@
     background-color: #fff;
   }
 
+    footer img {
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  footer a:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
   /*header ends*/
 }
 
