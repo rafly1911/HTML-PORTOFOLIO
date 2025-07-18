@@ -2,30 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home - MyWebsite</title>
 
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-    crossorigin="anonymous"
-  />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  
   <!-- Custom CSS -->
   <link href="assets/css/app.css" rel="stylesheet" />
+  <!-- Updated skill-animation.css link -->
+  <link href="assets/css/skill-animation.css" rel="stylesheet">
+  <!-- New home-animation.css link for the home page -->
+  <link href="assets/css/home-animation.css" rel="stylesheet">
 
-  <!-- Optional internal override -->
   <style>
     @media (max-width: 991.98px) {
-      .hero-section {
-        padding-top: 100px;
+      .navbar-collapse {
+        background-color: rgba(33, 37, 41, 0.95);
+        padding: 1rem;
+        border-radius: 0.5rem;
       }
     }
-
-    
-
   </style>
 </head>
 <body class="bg-dark">
@@ -68,7 +65,8 @@
   </header>
 
   <!-- Header Section -->
-  <section class="pt-5 mt-5 bg-secondary text-white position-relative bg-dark">
+  <!-- Added 'animate-on-scroll' class -->
+  <section class="pt-5 mt-5 bg-secondary text-white position-relative bg-dark animate-on-scroll">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
@@ -101,7 +99,8 @@
   </section>
 
   <!-- Social Media Section -->
-  <section class="py-2 mt-3 bg-light border-top">
+  <!-- Added 'animate-on-scroll' class -->
+  <section class="py-2 mt-3 bg-light border-top animate-on-scroll">
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
         <h3 class="fw-bold mb-3 mb-md-0">Linkedin Account</h3>
@@ -125,7 +124,8 @@
   </section>
 
   <!-- Extra Content Section -->
-  <section class="py-5 bg-dark text-white">
+  <!-- Added 'animate-on-scroll' class -->
+  <section class="py-5 bg-dark text-white animate-on-scroll">
     <div class="container text-center">
       <h4 class="mb-4">About Me</h4>
       <div class="d-flex justify-content-center gap-4">
@@ -136,30 +136,26 @@
     </div>
   </section>
 
+  <!-- Pengalaman Organisasi -->
   <div class="container mt-5 text-white">
-    <!-- Pengalaman Organisasi -->
-    <h4 class="text-center mb-5 fw-bold text-uppercase">Pengalaman Organisasi</h4>
-
-    <!-- Item 1 -->
-    <div class="row mb-5">
+    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll">Pengalaman Organisasi</h4>
+    <!-- Added 'animate-on-scroll' class to each row -->
+    <div class="row mb-5 animate-on-scroll">
       <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
         <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
       </div>
       <div class="col-md-11">
         <h6 class="text-secondary mb-1">2023 - 2024</h6>
         <h5 class="fw-semibold mb-3">Staff Departemen Politik dan Kesejahteraan Mahasiswa (POLKESMA)<br>BEM Fakultas Ilmu Komputer dan Teknologi Informasi</h5>
-
         <p class="mb-3">
           <strong>Perumusan Aspirasi & Penghubung Fakultas:</strong> Menampung dan menyampaikan aspirasi mahasiswa FIKTI kepada Wakil Dekan III sebagai penghubung utama antara mahasiswa dan fakultas.
         </p>
-
         <p class="mb-3">
           <strong>Program Kerja POLKESMA:</strong><br>
           <em>Hotline FIKTI:</em> Mengelola kanal bantuan akademik mahasiswa.<br>
           <em>Bincang Bareng FIKTI:</em> Memfasilitasi dialog interaktif mahasiswa dan fakultas.<br>
           <em>FIKTI Bersuara Opini Terkini:</em> Mewakili opini mahasiswa terhadap isu terkini.
         </p>
-
         <p class="mb-3">
           <strong>Desain & Publikasi (Diluar Program Kerja POLKESMA):</strong><br>
           <em>Upgrading Internal X FIKTI Next Generation:</em> Ketua HPDD – desain sertifikat, Zoom background, proposal, dan PPT.<br>
@@ -171,8 +167,8 @@
       </div>
     </div>
 
-    <!-- Item 2 -->
-    <div class="row mb-4">
+    <!-- Added 'animate-on-scroll' class to each row -->
+    <div class="row mb-4 animate-on-scroll">
       <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
         <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
       </div>
@@ -186,15 +182,13 @@
     </div>
   </div>
 
-
-
   <!-- Pendidikan -->
   <section class="py-5 bg-dark">
     <div class="container">
-      <h4 class="text-center text-uppercase fw-bold mb-5 text-white">Pendidikan</h4>
-
+      <h4 class="text-center text-uppercase fw-bold mb-5 text-white animate-on-scroll">Pendidikan</h4>
       <div class="row justify-content-center text-start">
-        <div class="col-md-5 mb-4">
+        <!-- Added 'animate-on-scroll' class to each column -->
+        <div class="col-md-5 mb-4 animate-on-scroll">
           <div class="border-start border-4 border-light ps-3">
             <h5 class="mb-1 text-white">Universitas Gunadarma</h5>
             <p class="mb-0 text-light">2022 – Sekarang</p>
@@ -202,7 +196,8 @@
           </div>
         </div>
 
-        <div class="col-md-5 mb-4">
+        <!-- Added 'animate-on-scroll' class to each column -->
+        <div class="col-md-5 mb-4 animate-on-scroll">
           <div class="border-start border-4 border-light ps-3">
             <h5 class="mb-1 text-white">SMA Negeri 23 Jakarta</h5>
             <p class="mb-0 text-light">2019 – 2022</p>
@@ -215,38 +210,34 @@
 
   <!--Sertifikasi-->
   <div class="container mt-5 text-white">
-    <h4 class="text-center mb-5 fw-bold text-uppercase">Sertifikat</h4>
-      <!--Javascrip Gundar-->
-        <div class="row mb-4">
-          <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
-            <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
-          </div>
-          <div class="col-md-11">
-            <h6 class="text-secondary mb-1">Universitas Gunadarma </h6>
-            <h5 class="fw-semibold mb-3">JavaScript Programming Language Fundamental</h5>
-          </div>
+    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll">Sertifikat</h4>
+      <!-- Added 'animate-on-scroll' class to each row -->
+      <div class="row mb-4 animate-on-scroll">
+        <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
+          <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
         </div>
-      
-
-      <!--MySkill UX-->
-      <div class="row mb-4">
-          <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
-            <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
-          </div>
-          <div class="col-md-11">
-            <h6 class="text-secondary mb-1">MySkill</h6>
-            <h5 class="fw-semibold mb-3">Introduction to UX research</h5>
-          </div>
+        <div class="col-md-11">
+          <h6 class="text-secondary mb-1">Universitas Gunadarma </h6>
+          <h5 class="fw-semibold mb-3">JavaScript Programming Language Fundamental</h5>
         </div>
+      </div>
       
+      <!-- Added 'animate-on-scroll' class to each row -->
+      <div class="row mb-4 animate-on-scroll">
+        <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
+          <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
+        </div>
+        <div class="col-md-11">
+          <h6 class="text-secondary mb-1">MySkill</h6>
+          <h5 class="fw-semibold mb-3">Introduction to UX research</h5>
+        </div>
+      </div>
   </div>
 
-
-
-
   <!-- Penjelasan Logo -->
-  <h4 class="text-center mb-3 text-white">My Personal Logo</h4>
-  <div class="container my-5 bg-dark text-white">
+  <!-- Added 'animate-on-scroll' class -->
+  <h4 class="text-center mb-3 text-white animate-on-scroll">My Personal Logo</h4>
+  <div class="container my-5 bg-dark text-white animate-on-scroll">
     <div class="row align-items-center">
       <!-- Gambar Logo -->
       <div class="col-md-6 text-center">
@@ -255,7 +246,6 @@
 
       <!-- Penjelasan Teks -->
       <div class="col-md-6">
-        
         <p class="text-justify">
           Logo ini merupakan representasi visual dari inisial nama saya, Rafly Fadriansyah Ramadhani, yang disingkat menjadi RFR. Desain logo mengusung konsep minimalis dan modern, yang sejalan dengan prinsip desain saya dalam bidang UI/UX: sederhana, fungsional, dan estetis.
           <br>
@@ -269,7 +259,8 @@
     </div>
   </div>
   
-  <div class="text-center py-5 bg-light">
+  <!-- Added 'animate-on-scroll' class -->
+  <div class="text-center py-5 bg-light animate-on-scroll">
     <a href="portofolio.html" class="text-decoration-none">
       <button class="btn btn-dark px-5 py-3 rounded-pill shadow-sm" style="min-width: 250px;">
         <div>
@@ -279,8 +270,6 @@
       </button>
     </a>
   </div>
-
-
 
 <footer class="bg-light py-4">
   <div class="container text-center">
@@ -304,9 +293,7 @@
   </div>
 </footer>
 
-
-
-  <!-- Copyright -->
+<!-- Copyright -->
 <div class="text-center p-3 text-white">
   © 2025 Copyright:
   <a class="text-white text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
@@ -314,8 +301,6 @@
   </a>
 </div>
 
-  <!-- Copyright -->
-  </footer>
   <!-- Anime.js -->
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 
@@ -326,11 +311,8 @@
   <!-- Manual JS -->
   <script src="assets/js/app.js"></script>
 
-  <script type="module">
-  import animejs from 'https://cdn.jsdelivr.net/npm/animejs@4.0.2/+esm'
-  </script>
-
-  
+  <!-- New home-animation.js link for the home page -->
+  <script src="assets/js/home-animation.js"></script>
 
 </body>
 </html>

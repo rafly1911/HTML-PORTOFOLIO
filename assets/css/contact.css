@@ -1,118 +1,61 @@
-.contact input,
-.contact textarea {
-    background: #2c2f33;
-    border: 1px solid #444;
-    border-radius: 3px;
-    box-shadow: none;
-    color: #ffffff;
-    font-size: 16px;
-    height: 60px;
-    padding: 10px 10px 10px 30px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
+/* assets/css/contact-styles.css */
+
+/* Responsive adjustments for navbar-collapse background */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(33, 37, 41, 0.95);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
 }
 
-.contact input:focus,
-.contact textarea:focus {
-    background: #2c2f33;
-    border: 1px solid #2F3440;
-    color: #ffffff;
-    outline: 0;
-    box-shadow: none;
+/* Custom styles for contact info layout */
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem; /* Increased spacing for better readability */
+}
+.contact-info-item i {
+  font-size: 1.8rem; /* Slightly larger icon */
+  margin-right: 15px; /* More space between icon and text */
+  color: #fff;
+  min-width: 30px; /* Ensure consistent icon alignment */
+  text-align: center;
+}
+.contact-info-item h5 {
+  margin-bottom: 0.2rem; /* Reduce space below heading */
+  font-weight: 600; /* Make heading slightly bolder */
+}
+.contact-info-item p {
+  margin-bottom: 0; /* Remove default paragraph margin */
+  font-size: 0.95rem; /* Slightly smaller text for minimalism */
+  color: #ccc; /* Lighter text color */
 }
 
+/* Style for form controls */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    color: #fff; /* White text color */
+    padding: 0.75rem 1rem; /* Adjust padding */
+}
 .form-control::placeholder {
-    color: #aaaaaa;
-    opacity: 1;
+    color: rgba(255, 255, 255, 0.6); /* Lighter placeholder text */
 }
-
-.btn-contact-bg {
-    border-radius: 30px;
-    color: #fff;
-    padding: 15px 27px;
-    text-transform: capitalize;
-    transition: all 0.3s ease;
-    background: #2F3440;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    width: 100%;
-    border: none;
-}
-
-.btn-contact-bg:hover,
-.btn-contact-bg:focus {
-    background: #ffffff;
-    color: #232434;
-}
-
-/* Address box di dark mode */
-.single_address {
-    overflow: hidden;
-    margin-bottom: 10px;
-    padding-left: 40px;
-    color: #ffffff;
-}
-
-.single_address i {
-    background: #2c2f33;
-    color: #2F3440;
-    border-radius: 30px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    float: left;
-    margin-right: 14px;
-    font-size: 22px;
-    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4);
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-.single_address:hover i {
-    background: #2F3440;
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly brighter on focus */
+    border-color: #fff; /* White border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25); /* Subtle white shadow on focus */
     color: #fff;
 }
-
-.single_address h4 {
-    font-size: 18px;
-    margin-bottom: 0;
-    font-weight: 600;
-    color: #ffffff;
+.btn-light {
+    background-color: #f8f9fa; /* Bootstrap's light color */
+    color: #212529; /* Dark text for contrast */
+    border-color: #f8f9fa;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
-
-.single_address p {
-    margin-top: 5px;
-    color: #cccccc;
-}
-
-.section-title h1 {
-    font-size: 44px;
-    font-weight: 500;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-}
-
-.section-title p {
-    padding: 0 10px;
-    width: 70%;
-    margin: auto;
-    letter-spacing: 1px;
-    color: #cccccc;
-}
-
-.section-title {
-    margin-bottom: 60px;
-}
-
-@media only screen and (max-width:768px) {
-    .contact {
-        margin-bottom: 60px;
-    }
-
-    .single_address {
-        padding-left: 0px;
-    }
+.btn-light:hover {
+    background-color: #e2e6ea; /* Slightly darker on hover */
+    border-color: #dae0e5;
+    color: #212529;
 }

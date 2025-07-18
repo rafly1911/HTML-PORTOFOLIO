@@ -1,0 +1,14 @@
+/* home-animation.css */
+
+/* Initial state for elements that will animate on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px); /* Start slightly below */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+}
+
+/* State when the element is visible in the viewport */
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
