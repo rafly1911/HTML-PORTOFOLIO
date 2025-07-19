@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Me - MyWebsite</title>
+  <title data-lang-key="contactPageTitle">Contact Me - MyWebsite</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -15,6 +15,8 @@
   <link href="assets/css/home-animation.css" rel="stylesheet">
   <!-- New custom CSS for contact page -->
   <link href="assets/css/contact-styles.css" rel="stylesheet">
+  <!-- New Language Switcher CSS -->
+  <link href="assets/css/language-switcher.css" rel="stylesheet">
 
 </head>
 <body class="bg-dark text-white">
@@ -22,20 +24,41 @@
   <!-- Navbar Full Width -->
   <header class="main-header bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
-      <a class="navbar-brand" href="/">
+
+      <a id="box" class="navbar-brand" href="/">
         <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
-        aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainMenu"
+        aria-controls="mainMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
         <ul class="navbar-nav ms-auto text-uppercase gap-2">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="myskill.html" class="nav-link">MySkill</a></li>
-          <li class="nav-item"><a href="portofolio.html" class="nav-link">Portofolio</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" data-lang-key="navHome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="myskill.html" class="nav-link" data-lang-key="navMySkill">MySkill</a>
+          </li>
+          <li class="nav-item">
+            <a href="portofolio.html" class="nav-link" data-lang-key="navPortofolio">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active" data-lang-key="navContact">Contact</a>
+          </li>
         </ul>
+        <!-- Language Switcher -->
+        <div class="language-switcher ms-lg-3 mt-3 mt-lg-0">
+          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="id">ID</button>
+          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en">EN</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -44,8 +67,8 @@
   <section class="py-5 mt-5">
     <div class="container py-5">
       <div class="text-center mb-5 animate-on-scroll">
-        <h1 class="fw-bold">Contact Me</h1>
-        <p class="lead text-light">Menjadi lebih dekat dengan saya</p>
+        <h1 class="fw-bold" data-lang-key="contactMeTitle">Contact Me</h1>
+        <p class="lead text-light" data-lang-key="contactLeadText">Menjadi lebih dekat dengan saya</p>
       </div>
 
       <div class="row g-5 justify-content-center">
@@ -54,16 +77,16 @@
           <form method="POST" action="https://formspree.io/f/xblyaggd">
             <div class="row">
               <div class="col-md-6 mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" data-lang-key="formNamePlaceholder" placeholder="Your Name" required>
               </div>
               <div class="col-md-6 mb-3">
-                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                <input type="email" name="email" class="form-control" data-lang-key="formEmailPlaceholder" placeholder="Your Email" required>
               </div>
               <div class="col-12 mb-3">
-                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                <input type="text" name="subject" class="form-control" data-lang-key="formSubjectPlaceholder" placeholder="Subject" required>
               </div>
               <div class="col-12 mb-3">
-                <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+                <textarea name="message" rows="5" class="form-control" data-lang-key="formMessagePlaceholder" placeholder="Your Message" required></textarea>
               </div>
 
               <!-- Anti-spam honeypot -->
@@ -73,7 +96,7 @@
               <input type="hidden" name="_next" value="https://yourwebsite.com/thanks">
 
               <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary btn-lg px-4 btn-light">Send Message</button>
+                <button type="submit" class="btn btn-primary btn-lg px-4 btn-light" data-lang-key="sendMessageBtn">Send Message</button>
               </div>
             </div>
           </form>
@@ -84,21 +107,21 @@
             <div class="contact-info-item">
               <i class="fa fa-map-marker"></i>
               <div>
-                <h5>Address</h5>
-                <p>Kota Bambu Selatan, Jakarta Barat, DKI Jakarta</p>
+                <h5 data-lang-key="addressTitle">Address</h5>
+                <p data-lang-key="addressContent">Kota Bambu Selatan, Jakarta Barat, DKI Jakarta</p>
               </div>
             </div>
             <div class="contact-info-item">
               <i class="fa fa-envelope"></i>
               <div>
-                <h5>Send your message</h5>
+                <h5 data-lang-key="sendMessageTitle">Send your message</h5>
                 <p>raflyfadrirama1911@gmail.com</p>
               </div>
             </div>
             <div class="contact-info-item">
               <i class="fa fa-phone"></i>
               <div>
-                <h5>Call us on</h5>
+                <h5 data-lang-key="callUsTitle">Call Me on</h5>
                 <p>(+62) 085156344108</p>
               </div>
             </div>
@@ -110,7 +133,7 @@
   <!-- Footer Section -->
   <footer class="bg-light py-4">
     <div class="container text-center">
-      <h5 class="text-dark mb-4">Follow Me</h5>
+      <h5 class="text-dark mb-4" data-lang-key="followMeTitle">Follow Me</h5>
       <div class="d-flex justify-content-center gap-4">
         <!-- Facebook -->
         <a href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID" target="_blank" title="Facebook">
@@ -132,7 +155,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3 text-white">
-    © 2025 Copyright:
+    <span data-lang-key="copyrightText">© 2025 Copyright:</span>
     <a class="text-white text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
       Rafly Fadriansyah Ramadhani
     </a>
@@ -142,5 +165,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Animation JS for scroll reveal (reusing home-animation.js) -->
   <script src="assets/js/home-animation.js"></script>
+  <!-- Language Switcher JS -->
+  <script src="assets/js/language-switcher.js"></script>
 </body>
 </html>

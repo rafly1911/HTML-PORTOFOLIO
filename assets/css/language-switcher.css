@@ -1,0 +1,21 @@
+/* assets/css/language-switcher.css */
+
+.language-switcher .btn {
+  margin-left: 5px;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.language-switcher .btn.active {
+  background-color: white;
+  color: #212529; /* Dark text for active button */
+  border-color: white;
+}
+
+.language-switcher .btn:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}

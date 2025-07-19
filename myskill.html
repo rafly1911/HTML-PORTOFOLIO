@@ -12,6 +12,8 @@
   <link href="assets/css/app.css" rel="stylesheet" />
   <!-- Updated skill-animation.css link -->
   <link href="assets/css/skill-animation.css" rel="stylesheet">
+    <!-- New Language Switcher CSS -->
+  <link href="assets/css/language-switcher.css" rel="stylesheet">
 
   <style>
     @media (max-width: 991.98px) {
@@ -29,7 +31,7 @@
   <header class="main-header bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
 
-      <a class="navbar-brand" href="/">
+      <a id="box" class="navbar-brand" href="/">
         <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
       </a>
       <button
@@ -46,18 +48,23 @@
       <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
         <ul class="navbar-nav ms-auto text-uppercase gap-2">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link active" data-lang-key="navHome">Home</a>
           </li>
           <li class="nav-item">
-            <a href="myskill.html" class="nav-link active">MySkill</a>
+            <a href="myskill.html" class="nav-link" data-lang-key="navMySkill">MySkill</a>
           </li>
           <li class="nav-item">
-            <a href="portofolio.html" class="nav-link">Portofolio</a>
+            <a href="portofolio.html" class="nav-link" data-lang-key="navPortofolio">Portofolio</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link" data-lang-key="navContact">Contact</a>
           </li>
         </ul>
+        <!-- Language Switcher -->
+        <div class="language-switcher ms-lg-3 mt-3 mt-lg-0">
+          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="id">ID</button>
+          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en">EN</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -136,5 +143,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Updated skill-animation.js link -->
   <script src="assets/js/skill-animation.js"></script>
+    <!-- New Language Switcher JS -->
+  <script src="assets/js/language-switcher.js"></script>
 </body>
 </html>

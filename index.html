@@ -2,21 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - MyWebsite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-lang-key="homePageTitle">Home - MyWebsite</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+    crossorigin="anonymous"
+  />
+
   <!-- Custom CSS -->
   <link href="assets/css/app.css" rel="stylesheet" />
-  <!-- Updated skill-animation.css link -->
-  <link href="assets/css/skill-animation.css" rel="stylesheet">
-  <!-- New home-animation.css link for the home page -->
   <link href="assets/css/home-animation.css" rel="stylesheet">
+  <!-- New Language Switcher CSS -->
+  <link href="assets/css/language-switcher.css" rel="stylesheet">
 
   <style>
     @media (max-width: 991.98px) {
+      .hero-section {
+        padding-top: 100px;
+      }
       .navbar-collapse {
         background-color: rgba(33, 37, 41, 0.95);
         padding: 1rem;
@@ -48,43 +55,38 @@
       <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
         <ul class="navbar-nav ms-auto text-uppercase gap-2">
           <li class="nav-item">
-            <a href="index.html" class="nav-link active">Home</a>
+            <a href="index.html" class="nav-link active" data-lang-key="navHome">Home</a>
           </li>
           <li class="nav-item">
-            <a href="myskill.html" class="nav-link">MySkill</a>
+            <a href="myskill.html" class="nav-link" data-lang-key="navMySkill">MySkill</a>
           </li>
           <li class="nav-item">
-            <a href="portofolio.html" class="nav-link">Portofolio</a>
+            <a href="portofolio.html" class="nav-link" data-lang-key="navPortofolio">Portofolio</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link" data-lang-key="navContact">Contact</a>
           </li>
         </ul>
+        <!-- Language Switcher -->
+        <div class="language-switcher ms-lg-3 mt-3 mt-lg-0">
+          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="id">ID</button>
+          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en">EN</button>
+        </div>
       </div>
     </nav>
   </header>
 
   <!-- Header Section -->
-  <!-- Added 'animate-on-scroll' class -->
   <section class="pt-5 mt-5 bg-secondary text-white position-relative bg-dark animate-on-scroll">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
           <h2 class="large grid centered square-grid text-xl">
-            <span>H</span>
-            <span>E</span>
-            <span>L</span>
-            <span>L</span>
-            <span>O</span>
-            <span>&nbsp;</span>
-            <span>I</span>
-            <span>'</span>
-            <span>A</span>
-            <span>M</span>
+            <span data-lang-key="helloIAm">HELLO I'AM</span>
           </h2>
           <h2 id="typed-text" class="fw-medium"></h2>
-          <p class="fs-4 fw-light">Undergraduate <br />System Information</p>
-          <p class="fs-5">At <br />Gunadarma University</p>
+          <p class="fs-4 fw-light" data-lang-key="undergraduateInfo">Undergraduate <br />System Information</p>
+          <p class="fs-5" data-lang-key="universityInfo">At <br />Gunadarma University</p>
         </div>
         <div class="col-md-6 text-center">
           <img
@@ -99,11 +101,10 @@
   </section>
 
   <!-- Social Media Section -->
-  <!-- Added 'animate-on-scroll' class -->
   <section class="py-2 mt-3 bg-light border-top animate-on-scroll">
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <h3 class="fw-bold mb-3 mb-md-0">Linkedin Account</h3>
+        <h3 class="fw-bold mb-3 mb-md-0" data-lang-key="linkedinAccount">Linkedin Account</h3>
         <div class="d-flex align-items-center gap-3">
           <img
             src="assets/img/linkedin.png"
@@ -124,39 +125,42 @@
   </section>
 
   <!-- Extra Content Section -->
-  <!-- Added 'animate-on-scroll' class -->
   <section class="py-5 bg-dark text-white animate-on-scroll">
     <div class="container text-center">
-      <h4 class="mb-4">About Me</h4>
+      <h4 class="mb-4" data-lang-key="aboutMeTitle">About Me</h4>
       <div class="d-flex justify-content-center gap-4">
-        <p>
+        <p data-lang-key="aboutMeContent">
           Mahasiswa semester 6 Program Studi Sistem Informasi di Universitas Gunadarma dengan fokus utama pada pengembangan website seperti UI/UX, HTML, CSS, PHP. Saya fleksibel, kreatif, dan berpikiran terbuka, serta mampu bekerja secara mandiri atau kelompok dengan memanfaatkan keterampilan kepemimpinan dan manajemen proyek yang saya peroleh melalui keterlibatan aktif di Badan Eksekutif Mahasiswa. Selain itu, minat saya yang tinggi dalam bidang UI/UX, Data Analyst membuat saya mendalami kedua bidang tersebut. sehingga dapat memberikan solusi inovatif yang mendukung pengambilan keputusan yang lebih baik.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Pengalaman Organisasi -->
   <div class="container mt-5 text-white">
-    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll">Pengalaman Organisasi</h4>
-    <!-- Added 'animate-on-scroll' class to each row -->
+    <!-- Pengalaman Organisasi -->
+    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll" data-lang-key="experienceTitle">Pengalaman Organisasi</h4>
+
+    <!-- Item 1 -->
     <div class="row mb-5 animate-on-scroll">
       <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
         <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
       </div>
       <div class="col-md-11">
-        <h6 class="text-secondary mb-1">2023 - 2024</h6>
-        <h5 class="fw-semibold mb-3">Staff Departemen Politik dan Kesejahteraan Mahasiswa (POLKESMA)<br>BEM Fakultas Ilmu Komputer dan Teknologi Informasi</h5>
-        <p class="mb-3">
+        <h6 class="text-secondary mb-1" data-lang-key="orgDate1">2023 - 2024</h6>
+        <h5 class="fw-semibold mb-3" data-lang-key="orgTitle1">Staff Departemen Politik dan Kesejahteraan Mahasiswa (POLKESMA)<br>BEM Fakultas Ilmu Komputer dan Teknologi Informasi</h5>
+
+        <p class="mb-3" data-lang-key="orgDesc1_1">
           <strong>Perumusan Aspirasi & Penghubung Fakultas:</strong> Menampung dan menyampaikan aspirasi mahasiswa FIKTI kepada Wakil Dekan III sebagai penghubung utama antara mahasiswa dan fakultas.
         </p>
-        <p class="mb-3">
+
+        <p class="mb-3" data-lang-key="orgDesc1_2">
           <strong>Program Kerja POLKESMA:</strong><br>
           <em>Hotline FIKTI:</em> Mengelola kanal bantuan akademik mahasiswa.<br>
           <em>Bincang Bareng FIKTI:</em> Memfasilitasi dialog interaktif mahasiswa dan fakultas.<br>
           <em>FIKTI Bersuara Opini Terkini:</em> Mewakili opini mahasiswa terhadap isu terkini.
         </p>
-        <p class="mb-3">
+
+        <p class="mb-3" data-lang-key="orgDesc1_3">
           <strong>Desain & Publikasi (Diluar Program Kerja POLKESMA):</strong><br>
           <em>Upgrading Internal X FIKTI Next Generation:</em> Ketua HPDD – desain sertifikat, Zoom background, proposal, dan PPT.<br>
           <em>FIKTI VISIT:</em> Staff Media – Sertifikat, spanduk, dokumentasi, dan koordinasi dengan 5 institusi eksternal.<br>
@@ -167,15 +171,15 @@
       </div>
     </div>
 
-    <!-- Added 'animate-on-scroll' class to each row -->
+    <!-- Item 2 -->
     <div class="row mb-4 animate-on-scroll">
       <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
         <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
       </div>
       <div class="col-md-11">
-        <h6 class="text-secondary mb-1">2020 - 2021</h6>
-        <h5 class="fw-semibold mb-3">Ketua MPK SMAN 23 Jakarta</h5>
-        <p>
+        <h6 class="text-secondary mb-1" data-lang-key="orgDate2">2020 - 2021</h6>
+        <h5 class="fw-semibold mb-3" data-lang-key="orgTitle2">Ketua MPK SMAN 23 Jakarta</h5>
+        <p data-lang-key="orgDesc2">
           Memimpin kegiatan MPK dan mengawasi OSIS selama satu periode. Bertanggung jawab terhadap berbagai kegiatan sekolah dan menjadi ketua pelaksana buku tahunan pada tahun 2022.
         </p>
       </div>
@@ -185,23 +189,22 @@
   <!-- Pendidikan -->
   <section class="py-5 bg-dark">
     <div class="container">
-      <h4 class="text-center text-uppercase fw-bold mb-5 text-white animate-on-scroll">Pendidikan</h4>
+      <h4 class="text-center text-uppercase fw-bold mb-5 text-white animate-on-scroll" data-lang-key="educationTitle">Pendidikan</h4>
+
       <div class="row justify-content-center text-start">
-        <!-- Added 'animate-on-scroll' class to each column -->
         <div class="col-md-5 mb-4 animate-on-scroll">
           <div class="border-start border-4 border-light ps-3">
-            <h5 class="mb-1 text-white">Universitas Gunadarma</h5>
-            <p class="mb-0 text-light">2022 – Sekarang</p>
-            <small class="text-secondary">Sistem Informasi</small>
+            <h5 class="mb-1 text-white" data-lang-key="eduUniName">Universitas Gunadarma</h5>
+            <p class="mb-0 text-light" data-lang-key="eduUniDate">2022 – Sekarang</p>
+            <small class="text-secondary" data-lang-key="eduUniMajor">Sistem Informasi</small>
           </div>
         </div>
 
-        <!-- Added 'animate-on-scroll' class to each column -->
         <div class="col-md-5 mb-4 animate-on-scroll">
           <div class="border-start border-4 border-light ps-3">
-            <h5 class="mb-1 text-white">SMA Negeri 23 Jakarta</h5>
-            <p class="mb-0 text-light">2019 – 2022</p>
-            <small class="text-secondary">Jurusan IPS</small>
+            <h5 class="mb-1 text-white" data-lang-key="eduHighSchoolName">SMA Negeri 23 Jakarta</h5>
+            <p class="mb-0 text-light" data-lang-key="eduHighSchoolDate">2019 – 2022</p>
+            <small class="text-secondary" data-lang-key="eduHighSchoolMajor">Jurusan IPS</small>
           </div>
         </div>
       </div>
@@ -210,33 +213,32 @@
 
   <!--Sertifikasi-->
   <div class="container mt-5 text-white">
-    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll">Sertifikat</h4>
-      <!-- Added 'animate-on-scroll' class to each row -->
+    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll" data-lang-key="certificatesTitle">Sertifikat</h4>
+      <!--Javascrip Gundar-->
       <div class="row mb-4 animate-on-scroll">
         <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
           <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
         </div>
         <div class="col-md-11">
-          <h6 class="text-secondary mb-1">Universitas Gunadarma </h6>
-          <h5 class="fw-semibold mb-3">JavaScript Programming Language Fundamental</h5>
+          <h6 class="text-secondary mb-1" data-lang-key="certGundarOrg">Universitas Gunadarma </h6>
+          <h5 class="fw-semibold mb-3" data-lang-key="certGundarTitle">JavaScript Programming Language Fundamental</h5>
         </div>
       </div>
       
-      <!-- Added 'animate-on-scroll' class to each row -->
+      <!--MySkill UX-->
       <div class="row mb-4 animate-on-scroll">
         <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
           <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
         </div>
         <div class="col-md-11">
-          <h6 class="text-secondary mb-1">MySkill</h6>
-          <h5 class="fw-semibold mb-3">Introduction to UX research</h5>
+          <h6 class="text-secondary mb-1" data-lang-key="certMySkillOrg">MySkill</h6>
+          <h5 class="fw-semibold mb-3" data-lang-key="certMySkillTitle">Introduction to UX research</h5>
         </div>
       </div>
   </div>
 
   <!-- Penjelasan Logo -->
-  <!-- Added 'animate-on-scroll' class -->
-  <h4 class="text-center mb-3 text-white animate-on-scroll">My Personal Logo</h4>
+  <h4 class="text-center mb-3 text-white animate-on-scroll" data-lang-key="logoExplanationTitle">My Personal Logo</h4>
   <div class="container my-5 bg-dark text-white animate-on-scroll">
     <div class="row align-items-center">
       <!-- Gambar Logo -->
@@ -246,7 +248,7 @@
 
       <!-- Penjelasan Teks -->
       <div class="col-md-6">
-        <p class="text-justify">
+        <p class="text-justify" data-lang-key="logoExplanationContent">
           Logo ini merupakan representasi visual dari inisial nama saya, Rafly Fadriansyah Ramadhani, yang disingkat menjadi RFR. Desain logo mengusung konsep minimalis dan modern, yang sejalan dengan prinsip desain saya dalam bidang UI/UX: sederhana, fungsional, dan estetis.
           <br>
           Penggunaan bentuk huruf yang tegas dan simetris mencerminkan konsistensi, profesionalisme, dan struktur berpikir sistematis karakter yang penting dalam dunia desain dan pengembangan sistem informasi. Potongan garis diagonal pada huruf tengah menambahkan nuansa dinamis dan futuristik, menunjukkan kemauan untuk terus berkembang dan berinovasi.
@@ -259,13 +261,12 @@
     </div>
   </div>
   
-  <!-- Added 'animate-on-scroll' class -->
   <div class="text-center py-5 bg-light animate-on-scroll">
     <a href="portofolio.html" class="text-decoration-none">
       <button class="btn btn-dark px-5 py-3 rounded-pill shadow-sm" style="min-width: 250px;">
         <div>
-          <h5 class="mb-1 fw-semibold text-white">View Portfolio</h5>
-          <small class="text-white-50">Click to explore</small>
+          <h5 class="mb-1 fw-semibold text-white" data-lang-key="viewPortfolioBtn">View Portfolio</h5>
+          <small class="text-white-50" data-lang-key="clickToExploreBtn">Click to explore</small>
         </div>
       </button>
     </a>
@@ -273,7 +274,7 @@
 
 <footer class="bg-light py-4">
   <div class="container text-center">
-    <h5 class="text-dark mb-4">Follow Me</h5>
+    <h5 class="text-dark mb-4" data-lang-key="followMeTitle">Follow Me</h5>
     <div class="d-flex justify-content-center gap-4">
       <!-- Facebook -->
       <a href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID" target="_blank" title="Facebook">
@@ -295,7 +296,7 @@
 
 <!-- Copyright -->
 <div class="text-center p-3 text-white">
-  © 2025 Copyright:
+  <span data-lang-key="copyrightText">© 2025 Copyright:</span>
   <a class="text-white text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
     Rafly Fadriansyah Ramadhani
   </a>
@@ -310,9 +311,9 @@
 
   <!-- Manual JS -->
   <script src="assets/js/app.js"></script>
-
-  <!-- New home-animation.js link for the home page -->
   <script src="assets/js/home-animation.js"></script>
+  <!-- New Language Switcher JS -->
+  <script src="assets/js/language-switcher.js"></script>
 
 </body>
 </html>
