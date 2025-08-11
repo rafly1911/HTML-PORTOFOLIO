@@ -74,8 +74,13 @@
             <span data-lang-key="helloIAm">HELLO I'AM</span>
           </h2>
           <h2 id="typed-text" class="fw-medium nama"></h2>
-          <p class="fs-4 fw-light" data-lang-key="undergraduateInfo">Undergraduate <br />System Information</p>
-          <p class="fs-5 nama" data-lang-key="universityInfo">At <br />Gu nadarma University</p>
+          <h4 class="fw-medium" data-lang-key="iAm">I'am</h4>
+          <div class="dropping-texts" style="font-size: 28px;">
+              <div data-lang-key="droppingText1">Undergraduate System Information</div>
+              <div data-lang-key="droppingText2">UI/UX Designer</div>
+              <div data-lang-key="droppingText3">Photographer</div>
+              <div data-lang-key="droppingText4">Graphic Designer</div>
+          </div>
         </div>
           <div class="col-md-6 text-center">
             <img
@@ -301,6 +306,16 @@
   <script src="assets/js/home-animation.js"></script>
   <!-- New Language Switcher JS -->
   <script src="assets/js/language-switcher.js"></script>
+  <script>
+  const texts = document.querySelectorAll(".dropping-texts div");
+  let index = 0;
+
+  setInterval(() => {
+      texts[index].classList.remove("active");
+      index = (index + 1) % texts.length;
+      texts[index].classList.add("active");
+  }, 2000);
+  </script>
 
 </body>
 </html>
