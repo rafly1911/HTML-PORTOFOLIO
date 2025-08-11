@@ -10,6 +10,7 @@
   
   <!-- Custom CSS -->
   <link href="assets/css/app.css" rel="stylesheet" />
+  <link href="assets/css/portofolio.css" rel="stylesheet" />
   <!-- Animation CSS for scroll reveal -->
   <link href="assets/css/home-animation.css" rel="stylesheet">
   <!-- Language Switcher CSS -->
@@ -29,13 +30,19 @@
         border-radius: 0.5rem;
       }
     }
+    .project-image {
+    height: 500px; /* tinggi tetap */
+    object-fit: cover; /* biar proporsinya terjaga */
+    object-position: top; /* fokus tengah */
+    }
+
   </style>
 </head>
-<body class="bg-dark text-white">
+<body>
 
   <!-- Navbar Full Width -->
-  <header class="main-header bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
+  <header class="main-heade">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top">
 
       <a id="box" class="navbar-brand" href="/">
         <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
@@ -76,79 +83,134 @@
   </header>
 
   <!-- Portfolio Section -->
-  <section class="py-5 bg-secondary text-white position-relative bg-dark">
-    <div class="container py-5">
-      <h1 class="fw-bold text-center mb-5 animate-on-scroll" data-lang-key="myPortofolioTitle">My Portofolio</h1>
+  <section class="portfolio-section-v2">
+      <div class="container py-5">
+          <div class="text-center mb-5 animate-on-scroll">
+              <h1 class="fw-bold text-white" data-lang-key="myPortofolioTitle">My Portfolio</h1>
+              <p class="lead text-secondary" data-lang-key="portfolioLead">A selection of projects that showcase my passion for design and development.</p>
+          </div>
 
-      <!-- Proyek Toko Bunga -->
-      <div class="container my-5 animate-on-scroll">
-        <h2 class="text-center mb-4" data-lang-key="flowerShopProjectTitle">Proyek Toko Bunga</h2>
+          <!-- Project Card 1: Toko Bunga -->
+          <div class="project-card animate-on-scroll">
+              <div class="row align-items-center">
+                  <!-- Project Image -->
+                    <div class="col-lg-7">
+                        <div id="projectCarousel1" class="carousel slide project-carousel" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Toko Bunga/Home.png" class="d-block w-100 project-image" alt="Project Screenshot 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Toko Bunga/About US.png" class="d-block w-100 project-image" alt="Project Screenshot 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Toko Bunga/Explore.png" class="d-block w-100 project-image" alt="Project Screenshot 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Toko Bunga/Login.png" class="d-block w-100 project-image" alt="Project Screenshot 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                  <!-- Project Details -->
+                  <div class="col-lg-5">
+                      <div class="project-details">
+                          <h3 class="project-title" data-lang-key="flowerShopProjectTitle">Flower Shop Website</h3>
+                          <p class="project-description" data-lang-key="flowerShopProjectDesc">
+                              A university project focused on database systems, where I was responsible for designing the complete UI/UX, from wireframes to a high-fidelity, user-friendly prototype for an online flower shop.
+                          </p>
+                          <div class="tech-tags">
+                              <span class="tech-tag">UI/UX Design</span>
+                              <span class="tech-tag">Figma</span>
+                              <span class="tech-tag">Database Design</span>
+                          </div>
+                          <div class="project-links">
+                              <a href="https://www.figma.com/proto/hrjijnIJpFQMB2ygiy4mL7/Tugas-SBD?page-id=0%3A1&node-id=65-33&p=f&viewport=34%2C236%2C0.04&t=Kr836lb1wfSjHUbJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=65%3A33" class="btn btn-project-link" target="_blank" data-lang-key="linkUiUxBtn">View Design</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-        <div class="row justify-content-center text-center g-4 mb-4">
-          <div class="col-md-4 col-sm-6">
-            <img src="assets/img/tokobunga2.png" class="img-fluid rounded shadow object-fit-cover" alt="Toko Bunga 1">
+          <!-- Project Card 2: Home Event -->
+          <div class="project-card animate-on-scroll">
+              <div class="row align-items-center">
+                  <div class="col-lg-5">
+                      <div class="project-details">
+                          <h3 class="project-title" data-lang-key="homeEventProjectTitle">Home Event Platform</h3>
+                          <p class="project-description" data-lang-key="homeEventProjectDesc">
+                              Developed as a final project for a web programming course, this platform serves as a promotional hub for various events. My role was to lead the UI/UX design and front-end implementation.
+                          </p>
+                          <div class="tech-tags">
+                              <span class="tech-tag">UI/UX Design</span>
+                              <span class="tech-tag">Figma</span>
+                              <span class="tech-tag">Laravel</span>
+                              <span class="tech-tag">Web Development</span>
+                          </div>
+                          <div class="project-links">
+                              <a href="https://www.figma.com/proto/uhXJMxEeaPICm78pc2bsmG/PBW-Home-Event?page-id=0%3A1&node-id=66-452&node-type=frame&viewport=154%2C536%2C0.05&t=VCD87DZT5tjWtcFE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=136%3A416" class="btn btn-project-link" target="_blank" data-lang-key="linkUiUxBtn">View Design</a>
+                              <a href="https://github.com/rafly1911/HomeEvent" class="btn btn-project-link-secondary" target="_blank" data-lang-key="githubHomeEventBtn">View Code</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-7">
+                      <div id="projectCarousel2" class="carousel slide project-carousel" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="4" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="5" aria-label="Slide 4"></button>
+                            </div>
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="assets/img/Home Event/Home have account.png" class="d-block w-100 project-image" alt="Project Screenshot 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Home Event/Login.png" class="d-block w-100 project-image" alt="Project Screenshot 4">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/img/Home Event/About US have acc.png" class="d-block w-100 project-image" alt="Project Screenshot 2">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/img/Home Event/category have acc.png" class="d-block w-100 project-image" alt="Project Screenshot 3">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/img/Home Event/Keterangan.png" class="d-block w-100 project-image" alt="Project Screenshot 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/Home Event/Ticket.png" class="d-block w-100 project-image" alt="Project Screenshot 4">
+                                </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <img src="assets/img/tokobunga1.png" class="img-fluid rounded shadow object-fit-cover" alt="Toko Bunga 2">
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img src="assets/img/tokobunga3.png" class="img-fluid rounded shadow object-fit-cover" alt="Toko Bunga 3">
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col">
-            <p class="text-center fs-5" data-lang-key="flowerShopProjectDesc">
-              Proyek ini dibuat sebagai bagian dari tugas mata kuliah Sistem Basis Data pada semester 4. Dalam proyek ini, kami berkolaborasi sebagai tim untuk merancang dan mengembangkan basis data untuk sebuah toko bunga online. <br><br>
-              Tanggung jawab saya adalah merancang UI/UX dari website, mulai dari wireframe hingga desain akhir agar ramah pengguna dan mendukung kebutuhan bisnis toko bunga secara daring.
-            </p>
-            <div class="d-flex justify-content-center gap-3 mt-4">
-              <a href="https://www.figma.com/proto/hrjijnIJpFQMB2ygiy4mL7/Tugas-SBD?page-id=0%3A1&node-id=65-33&p=f&viewport=34%2C236%2C0.04&t=Kr836lb1wfSjHUbJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=65%3A33" target="_blank">
-                <button class="btn btn-outline-light" type="button" data-lang-key="linkUiUxBtn">Link UI UX</button>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <!-- Proyek Home Event -->
-      <div class="container my-5 animate-on-scroll">
-        <h2 class="text-center mb-4" data-lang-key="homeEventProjectTitle">Proyek Home Event</h2>
-
-        <div class="row justify-content-center text-center g-4 mb-4">
-          <div class="col-md-4 col-sm-6">
-            <img src="assets/img/homeevent2.png" class="img-fluid rounded shadow object-fit-cover" alt="Home Event 1">
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img src="assets/img/homeevent1.png" class="img-fluid rounded shadow object-fit-cover" alt="Home Event 2">
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img src="assets/img/homeevent3.png" class="img-fluid rounded shadow object-fit-cover" alt="Home Event 3">
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col">
-            <p class="text-center fs-5" data-lang-key="homeEventProjectDesc">
-              Proyek ini merupakan Tugas Akhir untuk mata kuliah Pemrograman Berbasis Web di semester 5, yang dilaksanakan secara tim. <br><br>
-              Saya bertanggung jawab atas desain UI/UX, mulai dari halaman login hingga proses pengalihan pengguna ke situs resmi event. Website ini menjadi platform promosi acara, tanpa menangani transaksi langsung. <br><br>
-              Saya memastikan desainnya intuitif, estetis, dan mudah diakses.
-            </p>
-            <div class="d-flex justify-content-center gap-3 mt-4">
-              <a href="https://www.figma.com/proto/uhXJMxEeaPICm78pc2bsmG/PBW-Home-Event?page-id=0%3A1&node-id=66-452&node-type=frame&viewport=154%2C536%2C0.05&t=VCD87DZT5tjWtcFE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=136%3A416" target="_blank">
-                <button class="btn btn-outline-light" type="button" data-lang-key="linkUiUxBtn">Link UI UX</button>
-              </a>
-              <a href="https://github.com/rafly1911/HomeEvent" target="_blank">
-                <button class="btn btn-outline-light" type="button" data-lang-key="githubHomeEventBtn">Github Home Event</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </section>
-
   <!-- Footer Section -->
   <footer class="bg-light py-4">
     <div class="container text-center">

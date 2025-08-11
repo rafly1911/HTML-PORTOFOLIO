@@ -10,9 +10,9 @@
 }
 
 .language-switcher .btn.active {
-  background-color: white;
-  color: #212529; /* Dark text for active button */
-  border-color: white;
+  background-color: #BDC4D4;
+  color: #0F1A2B; /* Dark text for active button */
+  border-color: #337418;
 }
 
 .language-switcher .btn:hover:not(.active) {

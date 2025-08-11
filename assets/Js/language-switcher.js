@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       orgDesc1_3: "<strong>Design & Publication (Outside POLKESMA Work Programs):</strong><br><em>Internal Upgrading X FIKTI Next Generation:</em> Head of HPDD – certificate design, Zoom background, proposals, and PPT.<br><em>FIKTI VISIT:</em> Media Staff – Certificates, banners, and documentation.<br><em>SOSMAS Sharing:</em> Media Staff – Posters & social event documentation.<br><em>A Thread of Hope:</em> Media Staff – Certificates & humanitarian activity documentation.<br><em>FIKTI Student Executive Board General Election:</em> Media Staff – Posters and Instagram campaign feed.",
       orgDate2: "2020 - 2021",
       orgTitle2: "Head of MPK SMAN 23 Jakarta",
-      orgDesc2: "Led MPK activities and supervised OSIS for one period. Responsible for various school activities and served as the chief executive for the 2022 yearbook.",
+      orgDesc2: "Led MPK activities and supervised OSIS for one period.",
       educationTitle: "Education",
       eduUniName: "Gunadarma University",
       eduUniDate: "2022 – Present",
@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // My Skill Page Specific Translations
       mySkillPageTitle: "My Skill - MyWebsite",
       mySkillTitle: "My Skill",
+      mySkillLead: "A showcase of my technical and creative abilities.",
       usingNowTitle: "Using Now",
       learningTitle: "Learning",
       skillFigma: "Figma",
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       orgDesc1_3: "<strong>Desain & Publikasi (Diluar Program Kerja POLKESMA):</strong><br><em>Upgrading Internal X FIKTI Next Generation:</em> Ketua HPDD – desain sertifikat, Zoom background, proposal, dan PPT.<br><em>FIKTI VISIT:</em> Staf Media – Sertifikat, spanduk, dan dokumentasi.<br><em>SOSMAS Berbagi:</em> Staf Media – Poster & dokumentasi acara sosial.<br><em>Seutas Harapan:</em> Staf Media – Sertifikat & dokumentasi kegiatan kemanusiaan.<br><em>Pemilihan Umum Raya BEM FIKTI:</em> Staf Media – Poster dan Instagram campaign feed.",
       orgDate2: "2020 - 2021",
       orgTitle2: "Ketua MPK SMAN 23 Jakarta",
-      orgDesc2: "Memimpin kegiatan MPK dan mengawasi OSIS selama satu periode. Bertanggung jawab terhadap berbagai kegiatan sekolah dan menjadi ketua pelaksana buku tahunan pada tahun 2022.",
+      orgDesc2: "Memimpin kegiatan MPK dan mengawasi OSIS selama satu periode.",
       educationTitle: "Pendidikan",
       eduUniName: "Universitas Gunadarma",
       eduUniDate: "2022 – Sekarang",
@@ -148,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // My Skill Page Specific Translations
       mySkillPageTitle: "Kemampuan Saya - MyWebsite",
       mySkillTitle: "Kemampuan Saya",
+      mySkillLead: "Sebuah pertunjukan kemampuan teknis dan kreatif saya.",
       usingNowTitle: "Digunakan Sekarang",
       learningTitle: "Sedang Dipelajari",
       skillFigma: "Figma",

@@ -14,29 +14,18 @@
   />
 
   <!-- Custom CSS -->
-  <link href="assets/css/app.css" rel="stylesheet" />
+  <link href="assets/css/app.css" rel="stylesheet">
   <link href="assets/css/home-animation.css" rel="stylesheet">
   <!-- New Language Switcher CSS -->
   <link href="assets/css/language-switcher.css" rel="stylesheet">
 
-  <style>
-    @media (max-width: 991.98px) {
-      .hero-section {
-        padding-top: 100px;
-      }
-      .navbar-collapse {
-        background-color: rgba(33, 37, 41, 0.95);
-        padding: 1rem;
-        border-radius: 0.5rem;
-      }
-    }
-  </style>
+
 </head>
-<body class="bg-dark">
+<body >
 
   <!-- Navbar Full Width -->
-  <header class="main-header bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top">
 
       <a id="box" class="navbar-brand" href="/">
         <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
@@ -68,7 +57,7 @@
           </li>
         </ul>
         <!-- Language Switcher -->
-        <div class="language-switcher ms-lg-3 mt-3 mt-lg-0">
+        <div class="language-switcher ms-lg-3 mt-3 mt-lg-0 nama">
           <button class="btn btn-sm btn-outline-light lang-btn" data-lang="id">ID</button>
           <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en">EN</button>
         </div>
@@ -77,34 +66,31 @@
   </header>
 
   <!-- Header Section -->
-  <section class="pt-5 mt-5 bg-secondary text-white position-relative bg-dark animate-on-scroll">
+  <section class="pt-5 mt-5 bg-subtle text-white position-relative animate-on-scroll">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
-          <h2 class="large grid centered square-grid text-xl">
+          <h2 class="cursor typewriter-animation centered square-grid text-xl">
             <span data-lang-key="helloIAm">HELLO I'AM</span>
           </h2>
-          <h2 id="typed-text" class="fw-medium"></h2>
+          <h2 id="typed-text" class="fw-medium nama"></h2>
           <p class="fs-4 fw-light" data-lang-key="undergraduateInfo">Undergraduate <br />System Information</p>
-          <p class="fs-5" data-lang-key="universityInfo">At <br />Gunadarma University</p>
+          <p class="fs-5 nama" data-lang-key="universityInfo">At <br />Gu nadarma University</p>
         </div>
-        <div class="col-md-6 text-center">
-          <img
-            id="foto-ganti"
-            src="assets/img/foto_diri_tpbg.png"
-            alt="Foto"
-            class="img-fluid rounded shadow w-50 mx-auto d-block"
-          />
-        </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="assets/img/Group 47.png"
+              alt="Foto"
+              class="img-fluid rounded-3 w-50 mx-auto d-block border-6 animasi-gambar" />
+          </div>
       </div>
     </div>
   </section>
 
-  <!-- Social Media Section -->
-  <section class="py-2 mt-3 bg-light border-top animate-on-scroll">
+  <section class="py-2 mt-3 animate-on-scroll back">
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <h3 class="fw-bold mb-3 mb-md-0" data-lang-key="linkedinAccount">Linkedin Account</h3>
+        <h3 class="fw-bold mb-3 mb-md-0" data-lang-key="linkedinAccount" style="color: #0F1A2B;">Linkedin Account</h3>
         <div class="d-flex align-items-center gap-3">
           <img
             src="assets/img/linkedin.png"
@@ -115,7 +101,8 @@
           <a
             href="https://www.linkedin.com/in/rafly-fadriasnyah-ramadhani/"
             target="_blank"
-            class="text-decoration-none text-secondary fs-5 fw-light"
+            class="text-decoration-none fs-5 fw-light"
+            style="color: #0F1A2B;"
           >
             Rafly Fadriansyah Ramadhani
           </a>
@@ -125,91 +112,89 @@
   </section>
 
   <!-- Extra Content Section -->
-  <section class="py-5 bg-dark text-white animate-on-scroll">
-    <div class="container text-center">
-      <h4 class="mb-4" data-lang-key="aboutMeTitle">About Me</h4>
-      <div class="d-flex justify-content-center gap-4">
-        <p data-lang-key="aboutMeContent">
-          Mahasiswa semester 6 Program Studi Sistem Informasi di Universitas Gunadarma dengan fokus utama pada pengembangan website seperti UI/UX, HTML, CSS, PHP. Saya fleksibel, kreatif, dan berpikiran terbuka, serta mampu bekerja secara mandiri atau kelompok dengan memanfaatkan keterampilan kepemimpinan dan manajemen proyek yang saya peroleh melalui keterlibatan aktif di Badan Eksekutif Mahasiswa. Selain itu, minat saya yang tinggi dalam bidang UI/UX, Data Analyst membuat saya mendalami kedua bidang tersebut. sehingga dapat memberikan solusi inovatif yang mendukung pengambilan keputusan yang lebih baik.
-        </p>
+    <section class="py-5  text-white animate-on-scroll">
+      <div class="container text-center">
+        <h4 class="mb-4" data-lang-key="aboutMeTitle">About Me</h4>
+        <div class="d-flex justify-content-center gap-4">
+          <p data-lang-key="aboutMeContent">
+            Mahasiswa semester 6 Program Studi Sistem Informasi di Universitas Gunadarma dengan fokus utama pada pengembangan website seperti UI/UX, HTML, CSS, PHP. Saya fleksibel, kreatif, dan berpikiran terbuka, serta mampu bekerja secara mandiri atau kelompok dengan memanfaatkan keterampilan kepemimpinan dan manajemen proyek yang saya peroleh melalui keterlibatan aktif di Badan Eksekutif Mahasiswa. Selain itu, minat saya yang tinggi dalam bidang UI/UX, Data Analyst membuat saya mendalami kedua bidang tersebut. sehingga dapat memberikan solusi inovatif yang mendukung pengambilan keputusan yang lebih baik.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+<div class="container mt-5 text-white">
+    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll text-custom-green" data-lang-key="experienceTitle">Pengalaman Organisasi</h4>
 
-  <div class="container mt-5 text-white">
-    <!-- Pengalaman Organisasi -->
-    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll" data-lang-key="experienceTitle">Pengalaman Organisasi</h4>
+    <!--Organisasi Riwayat-->
+  <div class="timeline">
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h6 class="timeline-date" data-lang-key="orgDate1">2023 - 2024</h6>
+                    <h5 class="timeline-title text-custom-green" data-lang-key="orgTitle1">Staff Departemen Politik dan Kesejahteraan Mahasiswa (POLKESMA)<br>BEM Fakultas Ilmu Komputer dan Teknologi Informasi</h5>
+                    
+                    <p class="mb-3" data-lang-key="orgDesc1_1">
+                        <strong>Perumusan Aspirasi & Penghubung Fakultas:</strong> Menampung dan menyampaikan aspirasi mahasiswa FIKTI kepada Wakil Dekan III sebagai penghubung utama antara mahasiswa dan fakultas.
+                    </p>
 
-    <!-- Item 1 -->
-    <div class="row mb-5 animate-on-scroll">
-      <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
-        <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
-      </div>
-      <div class="col-md-11">
-        <h6 class="text-secondary mb-1" data-lang-key="orgDate1">2023 - 2024</h6>
-        <h5 class="fw-semibold mb-3" data-lang-key="orgTitle1">Staff Departemen Politik dan Kesejahteraan Mahasiswa (POLKESMA)<br>BEM Fakultas Ilmu Komputer dan Teknologi Informasi</h5>
+                    <strong data-lang-key="orgDesc1_2_title">Program Kerja POLKESMA:</strong>
+                    <ul class="timeline-list">
+                        <li data-lang-key="orgDesc1_2_item1"><em>Hotline FIKTI:</em> Mengelola kanal bantuan akademik mahasiswa.</li>
+                        <li data-lang-key="orgDesc1_2_item2"><em>Bincang Bareng FIKTI:</em> Memfasilitasi dialog interaktif mahasiswa dan fakultas.</li>
+                        <li data-lang-key="orgDesc1_2_item3"><em>FIKTI Bersuara Opini Terkini:</em> Mewakili opini mahasiswa terhadap isu terkini.</li>
+                    </ul>
 
-        <p class="mb-3" data-lang-key="orgDesc1_1">
-          <strong>Perumusan Aspirasi & Penghubung Fakultas:</strong> Menampung dan menyampaikan aspirasi mahasiswa FIKTI kepada Wakil Dekan III sebagai penghubung utama antara mahasiswa dan fakultas.
-        </p>
+                    <strong data-lang-key="orgDesc1_3_title">Desain & Publikasi (Kontribusi Lintas Departemen):</strong>
+                    <ul class="timeline-list">
+                        <li data-lang-key="orgDesc1_3_item1"><em>Upgrading Internal X FIKTI Next Generation:</em> Ketua HPDD – desain sertifikat, Zoom background, proposal, dan PPT.</li>
+                        <li data-lang-key="orgDesc1_3_item2"><em>FIKTI VISIT:</em> Staff Media – Sertifikat, spanduk, dan dokumentasi.</li>
+                        <li data-lang-key="orgDesc1_3_item3"><em>SOSMAS Berbagi:</em> Staff Media – Poster & dokumentasi acara sosial.</li>
+                        <li data-lang-key="orgDesc1_3_item4"><em>Seutas Harapan:</em> Staff Media – Sertifikat & dokumentasi kegiatan kemanusiaan.</li>
+                        <li data-lang-key="orgDesc1_3_item5"><em>Pemilihan Umum Raya BEM FIKTI:</em> Staff Media – Poster dan Instagram feed kampanye.</li>
+                    </ul>
+                </div>
+            </div>
 
-        <p class="mb-3" data-lang-key="orgDesc1_2">
-          <strong>Program Kerja POLKESMA:</strong><br>
-          <em>Hotline FIKTI:</em> Mengelola kanal bantuan akademik mahasiswa.<br>
-          <em>Bincang Bareng FIKTI:</em> Memfasilitasi dialog interaktif mahasiswa dan fakultas.<br>
-          <em>FIKTI Bersuara Opini Terkini:</em> Mewakili opini mahasiswa terhadap isu terkini.
-        </p>
-
-        <p class="mb-3" data-lang-key="orgDesc1_3">
-          <strong>Desain & Publikasi (Diluar Program Kerja POLKESMA):</strong><br>
-          <em>Upgrading Internal X FIKTI Next Generation:</em> Ketua HPDD – desain sertifikat, Zoom background, proposal, dan PPT.<br>
-          <em>FIKTI VISIT:</em> Staff Media – Sertifikat, spanduk, dan dokumentasi.<br>
-          <em>SOSMAS Berbagi:</em> Staff Media – Poster & dokumentasi acara sosial.<br>
-          <em>Seutas Harapan:</em> Staff Media – Sertifikat & dokumentasi kegiatan kemanusiaan.<br>
-          <em>Pemilihan Umum Raya BEM FIKTI:</em> Staff Media – Poster dan Instagram feed kampanye.
-        </p>
-      </div>
-    </div>
-
-    <!-- Item 2 -->
-    <div class="row mb-4 animate-on-scroll">
-      <div class="col-md-1 d-flex align-items-start justify-content-center pt-2">
-        <div class="bg-white rounded-circle" style="width: 12px; height: 12px;"></div>
-      </div>
-      <div class="col-md-11">
-        <h6 class="text-secondary mb-1" data-lang-key="orgDate2">2020 - 2021</h6>
-        <h5 class="fw-semibold mb-3" data-lang-key="orgTitle2">Ketua MPK SMAN 23 Jakarta</h5>
-        <p data-lang-key="orgDesc2">
-          Memimpin kegiatan MPK dan mengawasi OSIS selama satu periode. Bertanggung jawab terhadap berbagai kegiatan sekolah dan menjadi ketua pelaksana buku tahunan pada tahun 2022.
-        </p>
-      </div>
-    </div>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h6 class="timeline-date" data-lang-key="orgDate2">2020 - 2021</h6>
+                    <h5 class="timeline-title text-custom-green" data-lang-key="orgTitle2">Ketua MPK SMAN 23 Jakarta</h5>
+                    <p data-lang-key="orgDesc2">
+                        Bertanggung jawab Memimpin kegiatan MPK dan mengawasi OSIS selama satu periode.
+                    </p>
+                </div>
+            </div>
+        </div>
   </div>
 
-  <!-- Pendidikan -->
-  <section class="py-5 bg-dark">
-    <div class="container">
-      <h4 class="text-center text-uppercase fw-bold mb-5 text-white animate-on-scroll" data-lang-key="educationTitle">Pendidikan</h4>
+    //Pendidikan
+    <section class="py-5">
+      <div class="container">
+          <h4 class="text-center text-uppercase fw-bold mb-5 text-custom-green animate-on-scroll" data-lang-key="educationTitle">Pendidikan</h4>
 
-      <div class="row justify-content-center text-start">
-        <div class="col-md-5 mb-4 animate-on-scroll">
-          <div class="border-start border-4 border-light ps-3">
-            <h5 class="mb-1 text-white" data-lang-key="eduUniName">Universitas Gunadarma</h5>
-            <p class="mb-0 text-light" data-lang-key="eduUniDate">2022 – Sekarang</p>
-            <small class="text-secondary" data-lang-key="eduUniMajor">Sistem Informasi</small>
-          </div>
-        </div>
+          <div class="horizontal-timeline-container">
+              <div class="timeline-event timeline-event-bottom animate-on-scroll">
+                  <div class="timeline-date" data-lang-key="eduHighSchoolDate">2019 - 2022</div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content text-white">
+                      <h5 class="mb-1 text-custom-green" data-lang-key="eduHighSchoolName">SMA Negeri 23 Jakarta</h5>
+                      <small class="text-secondary" data-lang-key="eduHighSchoolMajor">Ilmu Pengetahuan Sosial</small>
+                  </div>
+              </div>
 
-        <div class="col-md-5 mb-4 animate-on-scroll">
-          <div class="border-start border-4 border-light ps-3">
-            <h5 class="mb-1 text-white" data-lang-key="eduHighSchoolName">SMA Negeri 23 Jakarta</h5>
-            <p class="mb-0 text-light" data-lang-key="eduHighSchoolDate">2019 – 2022</p>
-            <small class="text-secondary" data-lang-key="eduHighSchoolMajor">Jurusan IPS</small>
+              <div class="timeline-event timeline-event-top animate-on-scroll">
+                  <div class="timeline-date" data-lang-key="eduUniDate">2022 - Sekarang</div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content text-white">
+                      <h5 class="mb-1 text-custom-green" data-lang-key="eduUniName">Universitas Gunadarma</h5>
+                      <small class="text-secondary" data-lang-key="eduUniMajor">Sistem Informasi</small>
+                  </div>
+              </div>
+              
           </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!--Sertifikasi-->
   <div class="container mt-5 text-white">
@@ -239,7 +224,7 @@
 
   <!-- Penjelasan Logo -->
   <h4 class="text-center mb-3 text-white animate-on-scroll" data-lang-key="logoExplanationTitle">My Personal Logo</h4>
-  <div class="container my-5 bg-dark text-white animate-on-scroll">
+  <div class="container my-5  text-white animate-on-scroll">
     <div class="row align-items-center">
       <!-- Gambar Logo -->
       <div class="col-md-6 text-center">
@@ -261,12 +246,12 @@
     </div>
   </div>
   
-  <div class="text-center py-5 bg-light animate-on-scroll">
+  <div class="text-center py-5 animate-on-scroll">
     <a href="portofolio.html" class="text-decoration-none">
-      <button class="btn btn-dark px-5 py-3 rounded-pill shadow-sm" style="min-width: 250px;">
-        <div>
-          <h5 class="mb-1 fw-semibold text-white" data-lang-key="viewPortfolioBtn">View Portfolio</h5>
-          <small class="text-white-50" data-lang-key="clickToExploreBtn">Click to explore</small>
+      <button class="btn  px-5 py-3 rounded-pill shadow-sm" style="min-width: 250px; background-color: #BDC4D4;">
+        <div style="color: #1C2E4A;">
+          <h5 class="mb-1 fw-semibold " data-lang-key="viewPortfolioBtn">View Portfolio</h5>
+          <small class="50" style="color: #1C2E4A;" data-lang-key="clickToExploreBtn">Click to explore</small>
         </div>
       </button>
     </a>
@@ -304,6 +289,8 @@
 
   <!-- Anime.js -->
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

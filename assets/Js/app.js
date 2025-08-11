@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // === GANTI FOTO SETIAP 1 DETIK ===
   const imageElement = document.getElementById("foto-ganti");
   const imageUrls = [
-    "assets/img/foto_diri_tpbg.png",
+    "assets/img/diri2.png",
     "assets/img/fotodiri2.png"
   ];
   let index = 0;

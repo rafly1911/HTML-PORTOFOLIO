@@ -19,11 +19,11 @@
   <link href="assets/css/language-switcher.css" rel="stylesheet">
 
 </head>
-<body class="bg-dark text-white">
+<body >
 
   <!-- Navbar Full Width -->
   <header class="main-header bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top">
 
       <a id="box" class="navbar-brand" href="/">
         <img src="assets/img/logo.png" alt="Fadriansyah.Com" height="40" />
@@ -64,101 +64,96 @@
   </header>
 
   <!-- Contact Section -->
-  <section class="py-5 mt-5">
-    <div class="container py-5">
-      <div class="text-center mb-5 animate-on-scroll">
-        <h1 class="fw-bold" data-lang-key="contactMeTitle">Contact Me</h1>
-        <p class="lead text-light" data-lang-key="contactLeadText">Menjadi lebih dekat dengan saya</p>
+  <section class="contact-section-v2">
+      <div class="container">
+          <div class="text-center mb-5 animate-on-scroll">
+              <h1 class="fw-bold text-white" data-lang-key="contactMeTitle">Contact Me</h1>
+              <p class="lead text-secondary" data-lang-key="contactLeadText">Let's build something amazing together.</p>
+          </div>
+
+          <div class="contact-card animate-on-scroll">
+              <div class="row g-0">
+
+                  <div class="col-lg-5 contact-info-wrapper">
+                      <h3 class="fw-light text-white mb-3" data-lang-key="getInTouchTitle">Get in Touch</h3>
+                      <p class="text-secondary mb-5" data-lang-key="getInTouchDesc">
+                          Have a project in mind or just want to say hello? Fill out the form or contact me through one of the channels below.
+                      </p>
+
+                      <div class="contact-info-item">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          <div>
+                              <h6 data-lang-key="addressTitle">Address</h6>
+                              <p data-lang-key="addressContent">West Jakarta, DKI Jakarta</p>
+                          </div>
+                      </div>
+                      <div class="contact-info-item">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                          <div>
+                              <h6 data-lang-key="emailTitle">Email</h6>
+                              <p>raflyfadrirama1911@gmail.com</p>
+                          </div>
+                      </div>
+                      <div class="contact-info-item">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                          <div>
+                              <h6 data-lang-key="callUsTitle">Phone</h6>
+                              <p>(+62) 851-5634-4108</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-7 contact-form-wrapper">
+                      <form method="POST" action="https://formspree.io/f/xblyaggd">
+                          <div class="mb-4">
+                              <input type="text" name="name" class="form-control" placeholder="Your Name" data-lang-key="formNamePlaceholder" required>
+                          </div>
+                          <div class="mb-4">
+                              <input type="email" name="email" class="form-control" placeholder="Your Email" data-lang-key="formEmailPlaceholder" required>
+                          </div>
+                          <div class="mb-4">
+                              <input type="text" name="subject" class="form-control" placeholder="Subject" data-lang-key="formSubjectPlaceholder" required>
+                          </div>
+                          <div class="mb-4">
+                              <textarea name="message" rows="5" class="form-control" placeholder="Your Message..." data-lang-key="formMessagePlaceholder" required></textarea>
+                          </div>
+
+                          <input type="text" name="_gotcha" style="display:none">
+                          <input type="hidden" name="_next" value="https://yourwebsite.com/thanks"> <div class="text-end">
+                              <button type="submit" class="btn btn-custom-submit" data-lang-key="sendMessageBtn">Send Message</button>
+                          </div>
+                      </form>
+                  </div>
+
+              </div>
+          </div>
       </div>
-
-      <div class="row g-5 justify-content-center">
-        <!-- Contact Form -->
-        <div class="col-lg-7 animate-on-scroll">
-          <form method="POST" action="https://formspree.io/f/xblyaggd">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <input type="text" name="name" class="form-control" data-lang-key="formNamePlaceholder" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 mb-3">
-                <input type="email" name="email" class="form-control" data-lang-key="formEmailPlaceholder" placeholder="Your Email" required>
-              </div>
-              <div class="col-12 mb-3">
-                <input type="text" name="subject" class="form-control" data-lang-key="formSubjectPlaceholder" placeholder="Subject" required>
-              </div>
-              <div class="col-12 mb-3">
-                <textarea name="message" rows="5" class="form-control" data-lang-key="formMessagePlaceholder" placeholder="Your Message" required></textarea>
-              </div>
-
-              <!-- Anti-spam honeypot -->
-              <input type="text" name="_gotcha" style="display:none">
-              <!-- _next will redirect to a thank you page. If you prefer an in-page message without redirect,
-                   you would need to use Formspree's AJAX feature and handle the response with JavaScript. -->
-              <input type="hidden" name="_next" value="https://yourwebsite.com/thanks">
-
-              <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary btn-lg px-4 btn-light" data-lang-key="sendMessageBtn">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="col-lg-5 animate-on-scroll">
-            <div class="contact-info-item">
-              <i class="fa fa-map-marker"></i>
-              <div>
-                <h5 data-lang-key="addressTitle">Address</h5>
-                <p data-lang-key="addressContent">Kota Bambu Selatan, Jakarta Barat, DKI Jakarta</p>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa fa-envelope"></i>
-              <div>
-                <h5 data-lang-key="sendMessageTitle">Send your message</h5>
-                <p>raflyfadrirama1911@gmail.com</p>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa fa-phone"></i>
-              <div>
-                <h5 data-lang-key="callUsTitle">Call Me on</h5>
-                <p>(+62) 085156344108</p>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
   </section>
 
-  <!-- Footer Section -->
-  <footer class="bg-light py-4">
-    <div class="container text-center">
-      <h5 class="text-dark mb-4" data-lang-key="followMeTitle">Follow Me</h5>
-      <div class="d-flex justify-content-center gap-4">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID" target="_blank" title="Facebook">
-          <img src="assets/img/facebookdark.png" alt="Facebook" width="32" height="32">
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/rafadhan_19/" target="_blank" title="Instagram">
-          <img src="assets/img/instagramdark.png" alt="Instagram" width="34" height="34">
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/rafly1911" target="_blank" title="GitHub">
-          <img src="assets/img/githubdark.png" alt="GitHub" width="32" height="32">
-        </a>
+  <footer class="footer py-5 mt-5">
+      <div class="container text-center">
+          <h5 class="text-white mb-4" data-lang-key="followMeTitle">Follow Me</h5>
+          <div class="d-flex justify-content-center gap-4">
+              <a href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID" target="_blank" title="Facebook" class="social-icon">
+                  <img src="assets/img/facebookdark.png" alt="Facebook" width="32" height="32">
+              </a>
+              <a href="https://www.instagram.com/rafadhan_19/" target="_blank" title="Instagram" class="social-icon">
+                  <img src="assets/img/instagramdark.png" alt="Instagram" width="34" height="34">
+              </a>
+              <a href="https://github.com/rafly1911" target="_blank" title="GitHub" class="social-icon">
+                  <img src="assets/img/githubdark.png" alt="GitHub" width="32" height="32">
+              </a>
+          </div>
       </div>
-    </div>
   </footer>
 
-  <!-- Copyright -->
-  <div class="text-center p-3 text-white">
-    <span data-lang-key="copyrightText">© 2025 Copyright:</span>
-    <a class="text-white text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
-      Rafly Fadriansyah Ramadhani
-    </a>
+  <div class="text-center p-3 text-secondary">
+      <small>
+          <span data-lang-key="copyrightText">© 2025 Copyright:</span>
+          <a class="text-secondary text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
+              Rafly Fadriansyah Ramadhani
+          </a>
+      </small>
   </div>
 
   <!-- Bootstrap JS -->
