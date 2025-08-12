@@ -14,7 +14,7 @@
         copyrightText: "© 2025 Copyright:",
 
         // Home Page Specific Translations
-        helloIAm: "HELLO I'AM",
+        helloIAm: "HELLO MY NAME",
         undergraduateInfo: "Undergraduate <br />System Information",
         universityInfo: "At <br />Gunadarma University",
         linkedinAccount: "Linkedin Account",
@@ -43,7 +43,10 @@
         certMySkillTitle: "Introduction to UX research",
         logoExplanationTitle: "My Personal Logo",
         logoExplanationContent: "This logo is a visual representation of my initials, Rafly Fadriansyah Ramadhani, abbreviated as RFR. The logo design carries a minimalist and modern concept, which aligns with my design principles in UI/UX: simple, functional, and aesthetic.<br>The use of bold and symmetrical letterforms reflects consistency, professionalism, and systematic thinking—important characteristics in the world of design and information system development. Diagonal line cuts on the middle letter add a dynamic and futuristic nuance, indicating a willingness to continuously grow and innovate.<br>Dark blue color is chosen to give an impression of stability, trust, and firmness, reflecting my approach to completing projects: focused, directed, and responsible.<br>Overall, this logo is not just a symbol of personal identity, but also a visual statement about my work style and professional values in the digital design world.",
-        viewPortfolioBtn: "View Portfolio",
+        viewPortfolioBtn: "View Portfolio UI UX",
+        viewPortfolioDesc: "Click to explore",
+        viewPortfoliofotografiBtn: "View Photography Portfolio",
+        viewPortfoliofotografiDesc: "Click to explore",
         clickToExploreBtn: "Click to explore",
         droppingText1: "Undergraduate System Information",
         droppingText2: "UI/UX Designer",
@@ -104,7 +107,7 @@
         copyrightText: "© 2025 Hak Cipta:",
 
         // Home Page Specific Translations
-        helloIAm: "HELLO SAYA",
+        helloIAm: "HELLO NAMA SAYA",
         undergraduateInfo: "Mahasiswa <br />Sistem Informasi",
         universityInfo: "Di <br />Universitas Gunadarma",
         linkedinAccount: "Akun Linkedin",
@@ -133,7 +136,10 @@
         certMySkillTitle: "Pengantar Penelitian UX",
         logoExplanationTitle: "Logo Pribadi Saya",
         logoExplanationContent: "Logo ini merupakan representasi visual dari inisial nama saya, Rafly Fadriansyah Ramadhani, yang disingkat menjadi RFR. Desain logo mengusung konsep minimalis dan modern, yang sejalan dengan prinsip desain saya dalam bidang UI/UX: sederhana, fungsional, dan estetis.<br>Penggunaan bentuk huruf yang tegas dan simetris mencerminkan konsistensi, profesionalisme, dan struktur berpikir sistematis—karakter yang penting dalam dunia desain dan pengembangan sistem informasi. Potongan garis diagonal pada huruf tengah menambahkan nuansa dinamis dan futuristik, menunjukkan kemauan untuk terus berkembang dan berinovasi.<br>Warna biru tua dipilih untuk memberikan kesan stabilitas, kepercayaan, dan ketegasan, yang merefleksikan pendekatan saya dalam menyelesaikan proyek: fokus, terarah, dan bertanggung jawab.<br>Secara keseluruhan, logo ini bukan hanya lambang identitas personal, tetapi juga sebuah pernyataan visual tentang gaya kerja dan nilai profesional yang saya pegang dalam dunia desain digital.",
-        viewPortfolioBtn: "Lihat Portofolio",
+        viewPortfolioBtn: "Lihat Portofolio UI UX",
+        viewPortfolioDesc: "Klik untuk melihat",
+        viewPortfoliofotografiBtn: "Lihat Portofolio Fotografi",
+        viewPortfoliofotografiDesc: "Klik untuk melihat",
         clickToExploreBtn: "Klik untuk menjelajahi",
         droppingText1: "Mahasiswa Sistem Informasi",
         droppingText2: "UI/UX Desain",
@@ -185,72 +191,39 @@
       }
     };
 
-    // Function to set the language
-    function setLanguage(lang) {
-      // Store selected language in localStorage
-      localStorage.setItem('selectedLanguage', lang);
+  function setLanguage(lang) {
+    localStorage.setItem('selectedLanguage', lang);
 
-      // Update active button styling
-      document.querySelectorAll('.lang-btn').forEach(button => {
-        if (button.dataset.lang === lang) {
-          button.classList.add('active');
+    document.querySelectorAll('.lang-btn').forEach(button => {
+      button.classList.toggle('active', button.dataset.lang === lang);
+    });
+
+    document.querySelectorAll('[data-lang-key]').forEach(element => {
+      const key = element.dataset.langKey;
+      if (translations[lang] && translations[lang][key]) {
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+          element.placeholder = translations[lang][key];
         } else {
-          button.classList.remove('active');
-        }
-      });
-
-      // Update text content based on selected language
-      document.querySelectorAll('[data-lang-key]').forEach(element => {
-        const key = element.dataset.langKey;
-        if (translations[lang] && translations[lang][key]) {
-          // Handle innerHTML for elements that contain HTML tags (like <br> or <strong>)
-          // Also handle placeholder attributes
-          if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-            element.placeholder = translations[lang][key];
-          } else {
-            element.innerHTML = translations[lang][key];
-          }
-        }
-      });
-
-      // Special handling for the document title
-      const titleElement = document.querySelector('title');
-      if (titleElement && titleElement.dataset.langKey) {
-        const key = titleElement.dataset.langKey;
-        if (translations[lang] && translations[lang][key]) {
-          titleElement.textContent = translations[lang][key];
+          element.innerHTML = translations[lang][key];
         }
       }
+    });
 
-      // Special handling for the typed text in the header (if app.js uses it)
-      const typedTextElement = document.getElementById('typed-text');
-      if (typedTextElement) {
-          // This part assumes app.js has a way to be re-initialized or updated.
-          // If app.js is complex, this might require more integration.
-          // For now, let's assume it's just a static text after typing.
-          // If `app.js` needs to be updated, please let me know.
-          // As per previous instructions, the typed text is static after typing.
-          // We will keep it as is, or you can add a specific translation key for it
-          // if you want it to change with language.
-          // For now, it will remain "Rafly Fadriansyah Ramadhani" in both languages
-          // unless you add a specific key for it in the translations object.
-          // Example:
-          // if (lang === 'en') {
-          //     typedTextElement.textContent = "Rafly Fadriansyah Ramadhani";
-          // } else {
-          //     typedTextElement.textContent = "Rafly Fadriansyah Ramadhani";
-          // }
+    const titleElement = document.querySelector('title');
+    if (titleElement && titleElement.dataset.langKey) {
+      const key = titleElement.dataset.langKey;
+      if (translations[lang] && translations[lang][key]) {
+        titleElement.textContent = translations[lang][key];
       }
     }
+  }
 
-    // Get the stored language or default to 'id' (Indonesian)
-    const initialLang = localStorage.getItem('selectedLanguage') || 'id';
-    setLanguage(initialLang);
+  const initialLang = localStorage.getItem('selectedLanguage') || 'id';
+  setLanguage(initialLang);
 
-    // Add event listeners to language buttons
-    document.querySelectorAll('.lang-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        setLanguage(button.dataset.lang);
-      });
+  document.querySelectorAll('.lang-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      setLanguage(button.dataset.lang);
     });
   });
+});
