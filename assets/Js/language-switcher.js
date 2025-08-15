@@ -15,7 +15,7 @@
 
         // Home Page Specific Translations
         helloIAm: "HELLO MY NAME",
-        undergraduateInfo: "Undergraduate <br />System Information",
+        undergraduateInfo: "Undergraduate System Information At Gunadarma University",
         universityInfo: "At <br />Gunadarma University",
         linkedinAccount: "Linkedin Account",
         aboutMeTitle: "About Me",
@@ -48,7 +48,7 @@
         viewPortfoliofotografiBtn: "View Photography Portfolio",
         viewPortfoliofotografiDesc: "Click to explore",
         clickToExploreBtn: "Click to explore",
-        droppingText1: "Undergraduate System Information",
+        
         droppingText2: "UI/UX Designer",
         droppingText3: "Photographer",
         droppingText4: "Graphic Designer",
@@ -70,7 +70,7 @@
         // My Skill Page Specific Translations
         mySkillPageTitle: "My Skill - MyWebsite",
         mySkillTitle: "My Skill",
-        mySkillLead: "A showcase of my technical and creative abilities.",
+        mySkillLead: "A showcase of my technical and creative abilities",
         usingNowTitle: "Using Now",
         learningTitle: "Learning",
         skillFigma: "Figma",
@@ -108,7 +108,7 @@
 
         // Home Page Specific Translations
         helloIAm: "HELLO NAMA SAYA",
-        undergraduateInfo: "Mahasiswa <br />Sistem Informasi",
+        undergraduateInfo: "Mahasiswa Sistem Informasi pada Universitas Gunadarma",
         universityInfo: "Di <br />Universitas Gunadarma",
         linkedinAccount: "Akun Linkedin",
         aboutMeTitle: "Tentang Saya",
@@ -141,7 +141,7 @@
         viewPortfoliofotografiBtn: "Lihat Portofolio Fotografi",
         viewPortfoliofotografiDesc: "Klik untuk melihat",
         clickToExploreBtn: "Klik untuk menjelajahi",
-        droppingText1: "Mahasiswa Sistem Informasi",
+        
         droppingText2: "UI/UX Desain",
         droppingText3: "Fotografer",
         droppingText4: "Desain Grafis",
@@ -163,7 +163,7 @@
         // My Skill Page Specific Translations
         mySkillPageTitle: "Kemampuan Saya - MyWebsite",
         mySkillTitle: "Kemampuan Saya",
-        mySkillLead: "Sebuah pertunjukan kemampuan teknis dan kreatif saya.",
+        mySkillLead: "Sebuah pertunjukan kemampuan teknis dan kreatif saya",
         usingNowTitle: "Digunakan Sekarang",
         learningTitle: "Sedang Dipelajari",
         skillFigma: "Figma",

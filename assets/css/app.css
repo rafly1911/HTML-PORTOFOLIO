@@ -24,7 +24,12 @@
 
 body {
   background-color: var(--site-bg);
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;;
+  
 }
+
+
 
 .text-custom-green {
   color: var(--custom-green) !important;
@@ -207,17 +212,24 @@ body {
     overflow: hidden;
 }
 
+/* --- Dropping Texts Animation --- */
+/* --- Dropping Texts Animation --- */
+.dropping-texts {
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+
 .dropping-texts div {
     position: absolute;
     width: 100%;
-    animation: slide 8s infinite;
+    animation: slide 6s infinite;
     opacity: 0;
 }
 
 .dropping-texts div:nth-child(1) { animation-delay: 0s; }
 .dropping-texts div:nth-child(2) { animation-delay: 2s; }
 .dropping-texts div:nth-child(3) { animation-delay: 4s; }
-.dropping-texts div:nth-child(4) { animation-delay: 6s; }
 
 @keyframes slide {
     0%   { transform: translateY(100%); opacity: 0; }
@@ -226,6 +238,11 @@ body {
     35%  { transform: translateY(-100%);opacity: 0; }
     100% { transform: translateY(-100%);opacity: 0; }
 }
+
+
+
+
+
 
 
 /* ==========================================================================

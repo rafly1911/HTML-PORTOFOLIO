@@ -4,18 +4,29 @@ Portfolio Page - Modern Card Design by EDITH
 ======================================================
 */
 
+
+
+.portfolio-section-v2 h1,
+.portfolio-section-v2 p,
+.portfolio-section-v2 h5 {
+  color: white !important;
+}
+
 .portfolio-section-v2 {
     background-color: #0F1A2B;
     padding: 60px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .project-card {
     background-color: #16243a;
-    border-radius: 15px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    border: 1px solid #2a3b57;
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 15px; /* bikin card ikut melengkung */
+    overflow: hidden; /* biar gambar ikut lengkung */
 }
 
 .project-card:hover {
@@ -24,11 +35,13 @@ Portfolio Page - Modern Card Design by EDITH
 }
 
 .project-image {
-    border-radius: 15px;
-    object-fit: cover;
-    height: 100%;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
+    height: 500px; /* tinggi tetap */
+    object-fit: cover; /* biar proporsinya terjaga */
+    object-position: top; /* fokus tengah */
+    border-radius: 0; /* hilangkan radius di sini */
+    margin: 0; /* hilangkan margin supaya nyambung ke card */
+    margin: 10px;
+    width: 100%;
 }
 
 .project-card:hover .project-image {
