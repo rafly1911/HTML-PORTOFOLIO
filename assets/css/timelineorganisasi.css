@@ -1,0 +1,113 @@
+        /* Main container for the timeline section */
+        .timeline-section {
+            padding: 80px 0;
+        }
+
+        /* Wrapper for all timeline items, holds the central line */
+        .timeline-wrapper {
+            position: relative;
+            max-width: 800px; /* Constrain width for better readability on large screens */
+            margin: 0 auto;
+        }
+
+        /* The central vertical line */
+        .timeline-wrapper::before {
+            content: '';
+            position: absolute;
+            /* Aligns the line to the center of the dot (dot is 16px wide, line is 2px wide) */
+            /* Calculation: (16px / 2) - (2px / 2) = 7px */
+            left: 7px; 
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #2a3b57; /* A subtle color for the line */
+        }
+
+        /* Individual timeline event item */
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 40px; /* Creates space for the dot and the line */
+        }
+
+        /* Remove margin from the last item to avoid extra space at the bottom */
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* The dot on the timeline */
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 5px; /* Aligns the dot with the top of the date/title text */
+            width: 16px;
+            height: 16px;
+            background-color: #D1CFC9;
+            border: 3px solid #0F1A2B; /* Creates a "cutout" effect against the line */
+            border-radius: 50%;
+            z-index: 1; /* Ensures the dot is above the line */
+        }
+
+        /* Content block for each item, styled as a card */
+        .timeline-content {
+            background-color: #16243a;
+            border: 1px solid #2a3b57;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .timeline-item:hover .timeline-content {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for text elements within the content card */
+        .timeline-date {
+            color: #8a99b3;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .timeline-title {
+            color: #D1CFC9;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .timeline-content p, .timeline-content ul {
+            color: #b0c4de;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-content p:last-child, .timeline-content ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-content strong {
+            color: #D1CFC9;
+        }
+
+        .timeline-list {
+            padding-left: 20px;
+            margin-top: 0.5rem;
+        }
+
+        .timeline-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* A simple fade-in animation for scroll effect */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }

@@ -1,0 +1,121 @@
+        .horizontal-timeline-container {
+            display: flex;
+            position: relative;
+            padding: 80px 0;
+            margin: 0 5%; /* Provides some space on the sides */
+            justify-content: space-between; /* Distributes space between items */
+        }
+
+        /* The central horizontal line */
+        .horizontal-timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: var(--border-color);
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        /* A single event on the timeline */
+        .timeline-event {
+            flex: 1;
+            position: relative;
+        }
+
+        /* The dot on the line for each event */
+        .timeline-event .timeline-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: var(--navbar-bg);
+            border: 4px solid var(--custom-green);
+            transform: translate(-50%, -50%);
+            z-index: 3; /* Above the line and the card's arrow */
+            transition: transform 0.3s ease;
+        }
+
+        /* The content card for each event */
+        .timeline-event .timeline-content {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            padding: 1.2rem 1.5rem;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 2; /* Below the dot */
+        }
+
+        /* The arrow pointing from the card to the dot */
+        .timeline-event .timeline-content::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            background-color: var(--card-bg);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            transform: translateX(-50%) rotate(45deg);
+            z-index: -1; /* Behind the content card */
+        }
+
+        /* The date text for each event */
+        .timeline-event .timeline-date {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #adb5bd;
+            white-space: nowrap; /* Prevents date from breaking into two lines */
+        }
+
+        /* --- Positioning for Bottom Events --- */
+        .timeline-event-bottom .timeline-content { top: calc(50% + 35px); }
+        .timeline-event-bottom .timeline-content::before {
+            top: -7px; /* Position arrow at the top */
+            border-top: 1px solid var(--border-color);
+            border-left: 1px solid var(--border-color);
+            border-right: none;
+            border-bottom: none;
+        }
+        .timeline-event-bottom .timeline-date { bottom: calc(50% + 25px); }
+
+        /* --- Positioning for Top Events --- */
+        .timeline-event-top .timeline-content { bottom: calc(50% + 35px); }
+        .timeline-event-top .timeline-content::before { bottom: -7px; /* Position arrow at the bottom */ }
+        .timeline-event-top .timeline-date { top: calc(50% + 25px); }
+
+        /* --- Hover Effects --- */
+        .timeline-event:hover .timeline-dot {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .timeline-event:hover .timeline-content {
+            box-shadow: 0 8px 25px rgba(209, 207, 201, 0.15);
+        }
+        .timeline-event.timeline-event-bottom:hover .timeline-content {
+            transform: translateX(-50%) translateY(5px);
+        }
+        .timeline-event.timeline-event-top:hover .timeline-content {
+            transform: translateX(-50%) translateY(-5px);
+        }
+
+        /* General animation for scroll effect */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }

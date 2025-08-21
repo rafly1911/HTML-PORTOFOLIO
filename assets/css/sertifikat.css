@@ -1,0 +1,24 @@
+.certificate-list {
+  /* Opsional: Jika Anda ingin garis vertikal seperti di timeline sebelumnya */
+  position: relative; 
+}
+
+.certificate-item {
+  position: relative; /* Kunci agar dot bisa diposisikan */
+  padding-left: 30px; /* Memberi ruang untuk dot di sebelah kiri */
+  margin-bottom: 1.5rem; /* Menjaga jarak antar item (sama seperti mb-4) */
+}
+
+/* Di sinilah keajaibannya terjadi: Membuat dot dengan CSS */
+.certificate-item::before {
+  content: ''; /* Wajib ada untuk pseudo-elements */
+  position: absolute;
+  left: 0;
+  top: 8px; /* Posisi vertikal dot, sesuaikan agar sejajar dengan teks */
+  
+  /* Styling untuk dot */
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%; /* Membuatnya menjadi lingkaran sempurna */
+}

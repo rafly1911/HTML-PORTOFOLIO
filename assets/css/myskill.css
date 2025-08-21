@@ -1,100 +1,58 @@
-/*
-======================================================
-My Skills Page - Modern Card Design by EDITH
-======================================================
-*/
-.body {
-    background-color: #0F1A2B;
-}
+        /* === PERUBAHAN UTAMA DI SINI === */
+        .skill-section {
+            /* Padding-top ini untuk mendorong konten ke bawah navbar fixed-top.
+            Sesuaikan nilainya (misal: 120px) agar pas dengan tinggi navbar Anda + sedikit spasi.
+            */
+            padding-top: 120px; 
+            padding-bottom: 60px;
+            min-height: 100vh;
+        }
 
-.skill-section-v2 {
-    padding: 60px 0;
-    min-height: 100vh;
-}
+        .section-title {
+            color: #D1CFC9;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a3b57;
+        }
 
-.section-title {
-    color: var(--custom-green, #D1CFC9);
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #2a3b57;
-}
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
 
-.skill-grid {
-    display: grid;
-    /* Creates a responsive grid that wraps automatically */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
+        .skill-card {
+            background-color: #16243a;
+            border: 1px solid #2a3b57;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
 
-.skill-card {
-    background-color: #16243a;
-    border: 1px solid #2a3b57;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        .skill-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
 
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-}
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
+        }
 
-.skill-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.skill-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 1rem;
-}
-
-.skill-name {
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-.skill-bar-container {
-    background-color: #2a3b57;
-    border-radius: 5px;
-    height: 10px;
-    width: 100%;
-    position: relative;
-}
-
-.skill-bar {
-    background: linear-gradient(90deg, #D1CFC9, #a4a19c);
-    height: 100%;
-    border-radius: 5px;
-    width: 0; /* Initial width is 0, will be animated by JS */
-    transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-    position: relative;
-}
-
-/* Percentage text inside the bar */
-.skill-bar::after {
-    content: attr(data-percent) '%';
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #16243a;
-    font-size: 0.7rem;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.5s ease 0.5s; /* Fade in after bar animates */
-}
-
-/* Show percentage when the bar has animated */
-.skill-bar.animated::after {
-    opacity: 1;
-}
+        .skill-name {
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 0;
+        }

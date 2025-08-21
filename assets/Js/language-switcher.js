@@ -48,7 +48,7 @@
         viewPortfoliofotografiBtn: "View Photography Portfolio",
         viewPortfoliofotografiDesc: "Click to explore",
         clickToExploreBtn: "Click to explore",
-        
+        heroBio:"Information Systems students who are passionate about technology, design, and data analysis to create innovative digital solutions.",
         droppingText2: "UI/UX Designer",
         droppingText3: "Photographer",
         droppingText4: "Graphic Designer",
@@ -85,6 +85,7 @@
         skillJavascript: "JavaScript",
         skillPython: "Python",
         skillAdobeLightroom: "Adobe Lightroom",
+        ctaPortfolio:"Look Portofolio",
 
         // Portofolio Page Specific Translations (Add these when you implement them)
         portofolioPageTitle: "Portofolio - MyWebsite",
@@ -141,10 +142,11 @@
         viewPortfoliofotografiBtn: "Lihat Portofolio Fotografi",
         viewPortfoliofotografiDesc: "Klik untuk melihat",
         clickToExploreBtn: "Klik untuk menjelajahi",
-        
+        heroBio:"Mahasiswa Sistem Informasi yang bersemangat dalam teknologi, desain, dan analisis data untuk menciptakan solusi digital yang intuitif.",
         droppingText2: "UI/UX Desain",
         droppingText3: "Fotografer",
         droppingText4: "Desain Grafis",
+        ctaPortfolio:"Lihat Portofolio",
 
         // Contact Page Specific Translations
         contactPageTitle: "Kontak Saya - MyWebsite",
