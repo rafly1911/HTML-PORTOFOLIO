@@ -56,7 +56,7 @@
         // Contact Page Specific Translations
         contactPageTitle: "Contact Me - MyWebsite",
         contactMeTitle: "Contact Me",
-        contactLeadText: "Get closer to me",
+        contactLeadText: "Let's build something amazing together",
         formNamePlaceholder: "Your Name",
         formEmailPlaceholder: "Your Email",
         formSubjectPlaceholder: "Subject",
@@ -151,7 +151,7 @@
         // Contact Page Specific Translations
         contactPageTitle: "Kontak Saya - MyWebsite",
         contactMeTitle: "Kontak Saya",
-        contactLeadText: "Menjadi lebih dekat dengan saya",
+        contactLeadText: "Mari buat sesuatu yang luar biasa bersama.",
         formNamePlaceholder: "Nama Anda",
         formEmailPlaceholder: "Email Anda",
         formSubjectPlaceholder: "Subjek",

@@ -1,181 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title data-lang-key="contactPageTitle">Contact Me - MyWebsite</title>
-
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="assets/css/app.css" rel="stylesheet" />
-<!-- Animation CSS for scroll reveal (reusing home-animation.css) -->
-<link href="assets/css/home-animation.css" rel="stylesheet">
-<!--Navbar CSS     -->
-<link rel="stylesheet" href="assets/css/navbar.css">
-
-<!-- New custom CSS for contact page -->
-<link href="assets/css/contact-styles.css" rel="stylesheet">
-<!-- New Language Switcher CSS -->
-<link href="assets/css/language-switcher.css" rel="stylesheet">
-
-</head>
-<body >
-
-  <!-- Navbar Full Width -->
-  <header class="main-header bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top">
-
-        <a id="box" class="navbar-brand d-flex align-items-center gap-2" href="/">
-        <img src="assets/img/Logo/Frame 14.png" alt="Fadriansyah.Com" height="40" class="brand-logo" />
-       
-        </a>
-
-    <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="mainMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-    >
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
-        <ul class="navbar-nav ms-auto text-uppercase gap-2">
-        <li class="nav-item">
-            <a href="index.html" class="nav-link" data-lang-key="navHome">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="myskill.html" class="nav-link" data-lang-key="navMySkill">MySkill</a>
-        </li>
-        <li class="nav-item">
-            <a href="portofolio.html" class="nav-link" data-lang-key="navPortofolio">Portofolio</a>
-        </li>
-        <li class="nav-item">
-            <a href="contact.html" class="nav-link active" data-lang-key="navContact">Contact</a>
-        </li>
-        </ul>
-            <!-- Language Switcher -->
-            <div class="language-switcher ms-lg-3 mt-3 mt-lg-0">
-                <button class="btn btn-sm btn-outline-light lang-btn" data-lang="id">ID</button>
-                <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en">EN</button>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<!-- Contact Section -->
-<section class="contact-section-v2">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title data-lang-key="contactPageTitle">Contact Me - MyWebsite</title>
     
-    <div class="container py-5">
-        <div class="text-center mb-5 animate-on-scroll">
-            <h1 class="fw-bold text-white" data-lang-key="contactMeTitle">Contact Me</h1>
-            <p class="lead " data-lang-key="contactLeadText" style="color: #fff;">Let's build something amazing together.</p>
-        </div>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Get in touch with me for collaborations, projects, or just to say hello.">
+    <meta name="author" content="Rafly Fadriansyah Ramadhani">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <link href="assets/css/universal.css" rel="stylesheet">
+    <link href="assets/css/home-animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link href="assets/css/contact-styles.css" rel="stylesheet">
+    <link href="assets/css/language-switcher.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Full Width -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top">
+            <a id="box" class="navbar-brand d-flex align-items-center gap-2" href="/">
+                <img src="assets/img/Logo/Frame 14.png" alt="Fadriansyah.Com" height="40" class="brand-logo" />
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" 
+                aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
+                <ul class="navbar-nav ms-auto text-uppercase gap-2">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link" data-lang-key="navHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="myskill.html" class="nav-link" data-lang-key="navMySkill">MySkill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portofolio.html" class="nav-link" data-lang-key="navPortofolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active" data-lang-key="navContact">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher ms-lg-3 mt-3 mt-lg-0">
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="id">ID</button>
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-          <div class="contact-card animate-on-scroll">
-              <div class="row g-0">
-
-                  <div class="col-lg-5 contact-info-wrapper">
-                      <h3 class="fw-light text-white mb-3" data-lang-key="getInTouchTitle">Get in Touch</h3>
-                      <p class="text-secondary mb-5" data-lang-key="getInTouchDesc">
-                          Have a project in mind or just want to say hello? Fill out the form or contact me through one of the channels below.
-                      </p>
-
-                      <div class="contact-info-item">
-                          <i class="fa fa-map-marker" aria-hidden="true"></i>
-                          <div>
-                              <h6 data-lang-key="addressTitle">Address</h6>
-                              <p data-lang-key="addressContent">West Jakarta, DKI Jakarta</p>
-                          </div>
-                      </div>
-                      <div class="contact-info-item">
-                          <i class="fa fa-envelope" aria-hidden="true"></i>
-                          <div>
-                              <h6 data-lang-key="emailTitle">Email</h6>
-                              <p>raflyfadrirama1911@gmail.com</p>
-                          </div>
-                      </div>
-                      <div class="contact-info-item">
-                          <i class="fa fa-phone" aria-hidden="true"></i>
-                          <div>
-                              <h6 data-lang-key="callUsTitle">Phone</h6>
-                              <p>(+62) 851-5634-4108</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-7 contact-form-wrapper">
-                      <form method="POST" action="https://formspree.io/f/xblyaggd">
-                          <div class="mb-4">
-                              <input type="text" name="name" class="form-control" placeholder="Your Name" data-lang-key="formNamePlaceholder" required>
-                          </div>
-                          <div class="mb-4">
-                              <input type="email" name="email" class="form-control" placeholder="Your Email" data-lang-key="formEmailPlaceholder" required>
-                          </div>
-                          <div class="mb-4">
-                              <input type="text" name="subject" class="form-control" placeholder="Subject" data-lang-key="formSubjectPlaceholder" required>
-                          </div>
-                          <div class="mb-4">
-                              <textarea name="message" rows="5" class="form-control" placeholder="Your Message..." data-lang-key="formMessagePlaceholder" required></textarea>
-                          </div>
-
-                          <input type="text" name="_gotcha" style="display:none">
-                          <input type="hidden" name="_next" value="https://yourwebsite.com/thanks"> <div class="text-end">
-                              <button type="submit" class="btn btn-custom-submit" data-lang-key="sendMessageBtn">Send Message</button>
-                          </div>
-                      </form>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-  </section>
-
-    <footer class="bg-light py-4 rounded animate-on-scroll">
-    <div class="container text-center">
+    <!-- Contact Section -->
+    <main>
+        <section class="contact-section-v2">
+            <div id="particles-js"></div>
+            <div class="container py-5">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h1 class="fw-bold text-white" data-lang-key="contactMeTitle">Contact Me</h1>
+                    <p class="lead text-white" data-lang-key="contactLeadText">Let's build something amazing together.</p>
+                </div>
+                
+                <div class="contact-card animate-on-scroll">
+                    <div class="row g-0">
+                        <div class="col-lg-5 contact-info-wrapper">
+                            <h3 class="fw-light text-white mb-3" data-lang-key="getInTouchTitle">Get in Touch</h3>
+                            <p class="text-secondary mb-5" data-lang-key="getInTouchDesc">
+                                Have a project in mind or just want to say hello? Fill out the form or contact me through one of the channels below.
+                            </p>
+                            
+                            <div class="contact-info-item">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <div>
+                                    <h6 data-lang-key="addressTitle">Address</h6>
+                                    <p data-lang-key="addressContent">West Jakarta, DKI Jakarta</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h6 data-lang-key="emailTitle">Email</h6>
+                                    <p>raflyfadrirama1911@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <h6 data-lang-key="callUsTitle">Phone</h6>
+                                    <p>(+62) 851-5634-4108</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-7 contact-form-wrapper">
+                            <form method="POST" action="https://formspree.io/f/xblyaggd">
+                                <div class="mb-4">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" data-lang-key="formNamePlaceholder" required>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" data-lang-key="formEmailPlaceholder" required>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" data-lang-key="formSubjectPlaceholder" required>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea name="message" rows="5" class="form-control" placeholder="Your Message..." data-lang-key="formMessagePlaceholder" required></textarea>
+                                </div>
+                                
+                                <input type="text" name="_gotcha" style="display:none">
+                                <input type="hidden" name="_next" value="https://yourwebsite.com/thanks">
+                                
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-custom-submit" data-lang-key="sendMessageBtn">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class=" footer bg-light py-4 rounded animate-on-scroll">
+        <div class="container text-center">
         <h5 class="text-dark mb-4" data-lang-key="followMeTitle">Follow Me</h5>
         <div class="d-flex justify-content-center gap-4">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID" target="_blank" title="Facebook">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID" target="_blank" title="Facebook">
             <img src="assets/img/facebookdark.png" alt="Facebook" width="32" height="32">
-        </a>
+            </a>
 
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/rafadhan_19/" target="_blank" title="Instagram">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/rafadhan_19/" target="_blank" title="Instagram">
             <img src="assets/img/instagramdark.png" alt="Instagram" width="34" height="34">
-        </a>
+            </a>
 
-        <!-- GitHub -->
-        <a href="https://github.com/rafly1911" target="_blank" title="GitHub">
+            <!-- GitHub -->
+            <a href="https://github.com/rafly1911" target="_blank" title="GitHub">
             <img src="assets/img/githubdark.png" alt="GitHub" width="32" height="32">
-        </a>
+            </a>
         </div>
-    </div>
+        </div>
     </footer>
 
-  <div class="text-center p-3 text-secondary">
-      <small>
-          <span data-lang-key="copyrightText">© 2025 Copyright:</span>
-          <a class="text-secondary text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
-              Rafly Fadriansyah Ramadhani
-          </a>
-      </small>
-  </div>
-
-    <!-- Bootstrap JS -->
+    
+    <!-- Copyright -->
+    <div class="text-center p-3 text-white">
+    <span data-lang-key="copyrightText">© 2025 Copyright:</span>
+    <a class="text-white text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
+        Rafly Fadriansyah Ramadhani
+    </a>
+    </div>
+    
+    <!-- Scripts -->
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
-    
-    <!-- Animation JS for scroll reveal (reusing home-animation.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/home-animation.js"></script>
-    
     <script src="assets/Js/navbar.js"></script>
-    <!-- Language Switcher JS -->
     <script src="assets/js/language-switcher.js"></script>
 </body>
 </html>

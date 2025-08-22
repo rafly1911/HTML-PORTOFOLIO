@@ -3,14 +3,14 @@
 /* Initial state for elements that will animate on scroll */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(30px); /* Start slightly below */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+  transform: translateY(30px); 
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 /* State when the element is visible in the viewport */
 .animate-on-scroll.is-visible {
   opacity: 1;
-  transform: translateY(0); /* Move to original position */
+  transform: translateY(0); 
 }
 
 .typewriter-animation {
@@ -19,12 +19,12 @@
   white-space: nowrap;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   animation: typewriter 2s steps(10, end) infinite alternate,
-             blinkingCursor 0.7s steps(1) infinite;
+  blinkingCursor 0.7s steps(1) infinite;
 }
 
 @keyframes typewriter {
   from { width: 0ch; }
-  to { width: 18ch; } /* jumlah karakter teks */
+  to { width: 18ch; } 
 }
 
 @keyframes blinkingCursor {
@@ -45,7 +45,7 @@
 /* --- profesi --- */
 .dropping-texts {
     position: relative;
-    height: 40px; /* tinggi container */
+    height: 40px; 
     overflow: hidden;
 }
 

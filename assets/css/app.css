@@ -330,18 +330,23 @@ body {
    9. Component: Footer
    ========================================================================== */
 .footer {
-  background-color: var(--navbar-bg); /* Menggunakan variabel yang sudah ada */
+  background-color: var(--navbar-bg);
+  max-width: 1200px;   /* atau ukuran yang Anda mau */
+  margin: 0 auto;      /* biar center */
+  border-radius: 12px; /* biar agak seperti card */
 }
 
-.footer img {
+
+footer img {
   opacity: 0.8;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.footer a:hover img {
+footer a:hover img {
   transform: scale(1.2);
   opacity: 1;
 }
+
 
 .social-icon img {
   opacity: 0.7;

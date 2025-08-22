@@ -3,377 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-lang-key="homePageTitle">Home - MyWebsite</title>
+  <title>Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #0f172a;
+      color: #f1f5f9;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      transition: opacity 1s ease; /* Transisi halus */
+    }
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-    crossorigin="anonymous"
-  />
+    body.fade-out {
+      opacity: 0;
+    }
 
-  <!-- Custom CSS -->
-  <link href="assets/css/app.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/sertifikat.css">
-  <link rel="stylesheet" href="assets/css/timelineorganisasi.css">
-  <link rel="stylesheet" href="assets/css/timelinependidikan.css">
-  
-  <link href="assets/css/home-animation.css" rel="stylesheet">
-  <!-- New Language Switcher CSS -->
-  <link href="assets/css/language-switcher.css" rel="stylesheet">
+    .intro-container {
+      text-align: center;
+    }
 
+    .intro-text {
+      font-size: 2rem;
+      border-right: 2px solid #D1CFC9;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 2.5s steps(25, end) forwards;
+    }
 
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 20ch; }
+    }
+  </style>
 </head>
-<body >
-
-  <!-- Navbar Full Width -->
-  <header class="main-header">
-    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 fixed-top">
-
-    <!-- Navbar Brand -->
-    <a id="box" class="navbar-brand d-flex align-items-center gap-2" href="/">
-      <img src="assets/img/Logo/Frame 14.png" alt="Fadriansyah.Com" height="40" class="brand-logo" />
-    </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="mainMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainMenu">
-        <ul class="navbar-nav ms-auto text-uppercase gap-2">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link active" data-lang-key="navHome">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="myskill.html" class="nav-link" data-lang-key="navMySkill">MySkill</a>
-          </li>
-          <li class="nav-item">
-            <a href="portofolio.html" class="nav-link" data-lang-key="navPortofolio">Portofolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link" data-lang-key="navContact">Contact</a>
-          </li>
-        </ul>
-        <!-- Language Switcher -->
-        <div class="language-switcher ms-lg-3 mt-3 mt-lg-0 nama">
-          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="id">ID</button>
-          <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en">EN</button>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  
-
-<!-- Hero Section -->
-    <section class="hero">
-        <!-- Elemen untuk Latar Belakang Partikel Dinamis -->
-        <div id="particles-js"></div>
-
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <!-- Kolom Kiri: Teks -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="cursor typewriter-animation centered square-grid text-xl">
-                        <span data-lang-key="helloIAm">HELLO, MY NAME IS</span>
-                    </h2>
-                    <h1 id="typed-text" class="fw-bold nam text-white"></h1>
-                    <h4 class="fw-medium" data-lang-key="iAm">I'am a</h4>
-                    <div class="dropping-texts" style="font-size: 28px;">
-                        <!-- Pastikan elemen ini diisi oleh JavaScript Anda -->
-                        <div data-lang-key="droppingText1">Student</div>
-                        <div data-lang-key="droppingText2">UI/UX Designer</div>
-                        <div data-lang-key="droppingText3">Photographer</div>
-                    </div>
-
-                    <!-- BIO SINGKAT -->
-                    <p class="lead mt-4" data-lang-key="heroBio" style="max-width: 500px;">
-                        Mahasiswa Sistem Informasi yang bersemangat dalam teknologi, desain, dan analisis data untuk menciptakan solusi digital yang intuitif.
-                    </p>
-
-                    <!-- TOMBOL CALL TO ACTION (CTA) -->
-                    <div class="mt-4">
-                        <a href="portofolio.html" class="btn  me-2 px-4 glass-button" data-lang-key="ctaPortfolio">Lihat Portofolio</a>
-                        <a href="contact.html" class="btn glass-button px-1 index.html" data-lang-key="contactMeTitle"></a>
-                    </div>
-
-                    <!-- IKON MEDIA SOSIAL -->
-                    <div class="mt-5 social-icons">
-                        <a href="#" target="_blank" class="text-white me-4" title="LinkedIn"><i class="bi bi-linkedin fs-4"></i></a>
-                        <a href="#" target="_blank" class="text-white me-4" title="GitHub"><i class="bi bi-github fs-4"></i></a>
-                        <a href="#" target="_blank" class="text-white" title="Instagram"><i class="bi bi-instagram fs-4"></i></a>
-                    </div>
-                </div>
-
-                <!-- Kolom Kanan: Gambar -->
-                <div class="col-md-6 text-center mt-5 mt-md-0">
-                    <img src="assets/img/Group 49.png" 
-                        alt="Foto Rafly Fadriansyah"
-                        class="img-fluid rounded-3 w-75 mx-auto d-block animasi-gambar" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-<section class="py-2 mt-3 animate-on-scroll back">
-  <div class="container">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <h3 class="fw-bold mb-3 mb-md-0" data-lang-key="linkedinAccount" style="color: #D1CFC9;">
-        Linkedin Account
-      </h3>
-      <div class="d-flex align-items-center gap-3">
-        <img
-          src="assets/img/linkedin.png"
-          alt="Social Icon"
-          class="rounded"
-          style="width: 50px"
-        />
-        <a
-          href="https://www.linkedin.com/in/rafly-fadriasnyah-ramadhani/"
-          target="_blank"
-          class="text-decoration-none fs-5 fw-bold text-light"
-          style="color: #D1CFC9; font-weight: 900;"
-        >
-          Rafly Fadriansyah Ramadhani
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Extra Content Section -->
-    <section class="py-5  text-white animate-on-scroll ">
-      <div class="container text-center">
-        <h4 class="mb-4 tag-card fw-bold" data-lang-key="aboutMeTitle">About Me</h4>
-        <div class="d-flex justify-content-center gap-4">
-          <p data-lang-key="aboutMeContent">
-            Mahasiswa semester 6 Program Studi Sistem Informasi di Universitas Gunadarma dengan fokus utama pada pengembangan website seperti UI/UX, HTML, CSS, PHP. Saya fleksibel, kreatif, dan berpikiran terbuka, serta mampu bekerja secara mandiri atau kelompok dengan memanfaatkan keterampilan kepemimpinan dan manajemen proyek yang saya peroleh melalui keterlibatan aktif di Badan Eksekutif Mahasiswa. Selain itu, minat saya yang tinggi dalam bidang UI/UX, Data Analyst membuat saya mendalami kedua bidang tersebut. sehingga dapat memberikan solusi inovatif yang mendukung pengambilan keputusan yang lebih baik.
-          </p>
-        </div>
-      </div>
-    </section>
-
-  <!--Pengalamn Organisasi-->
-  <div class="container mt-5 text-white text-center">
-    <!-- Judul -->
-    <h4 class="mb-5 fw-bold text-uppercase animate-on-scroll tag-card text-custom-green"
-        data-lang-key="experienceTitle">
-      Pengalaman Organisasi
-    </h4>
-
-    <!-- Timeline Organisasi -->
-    <section class="timeline-section">
-        <div class="container">
-            <!-- This wrapper contains the line and all items -->
-            <div class="timeline-wrapper">
-                <!-- Item 1 -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content text-start">
-                        <h6 class="timeline-date" data-lang-key="orgDate1">2023 - 2024</h6>
-                        <h5 class="timeline-title text-custom-green" data-lang-key="orgTitle1">
-                            Staff Departemen Politik dan Kesejahteraan Mahasiswa (POLKESMA)<br>
-                            BEM Fakultas Ilmu Komputer dan Teknologi Informasi
-                        </h5>
-                        <p class="mb-3" data-lang-key="orgDesc1_1">
-                            <strong>Perumusan Aspirasi & Penghubung Fakultas:</strong>
-                            Menampung dan menyampaikan aspirasi mahasiswa FIKTI kepada Wakil Dekan III sebagai penghubung utama antara mahasiswa dan fakultas.
-                        </p>
-                        <strong data-lang-key="orgDesc1_2_title">Program Kerja POLKESMA:</strong>
-                        <ul class="timeline-list">
-                            <li data-lang-key="orgDesc1_2_item1"><em>Hotline FIKTI:</em> Mengelola kanal bantuan akademik mahasiswa.</li>
-                            <li data-lang-key="orgDesc1_2_item2"><em>Bincang Bareng FIKTI:</em> Memfasilitasi dialog interaktif mahasiswa dan fakultas.</li>
-                            <li data-lang-key="orgDesc1_2_item3"><em>FIKTI Bersuara Opini Terkini:</em> Mewakili opini mahasiswa terhadap isu terkini.</li>
-                        </ul>
-                        <strong data-lang-key="orgDesc1_3_title">Desain & Publikasi (Kontribusi Lintas Departemen):</strong>
-                        <ul class="timeline-list">
-                            <li data-lang-key="orgDesc1_3_item1"><em>Upgrading Internal X FIKTI Next Generation:</em> Ketua HPDD – desain sertifikat, Zoom background, proposal, dan PPT.</li>
-                            <li data-lang-key="orgDesc1_3_item2"><em>FIKTI VISIT:</em> Staff Media – Sertifikat, spanduk, dan dokumentasi.</li>
-                            <li data-lang-key="orgDesc1_3_item3"><em>SOSMAS Berbagi:</em> Staff Media – Poster & dokumentasi acara sosial.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content text-start">
-                        <h6 class="timeline-date" data-lang-key="orgDate2">2020 - 2021</h6>
-                        <h5 class="timeline-title text-custom-green" data-lang-key="orgTitle2">
-                            Ketua Majelis Perwakilan Sekolah
-                        </h5>
-                        <p data-lang-key="orgDesc2">
-                            Bertanggung jawab memimpin kegiatan MPK dan mengawasi OSIS selama satu periode.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pendidikan -->
-    <section class="py-5">
-        <div class="container">
-            <h4 class="text-center text-uppercase fw-bold mb-5 text-custom-green animate-on-scroll" data-lang-key="educationTitle">Pendidikan</h4>
-            <div class="horizontal-timeline-container">
-                <div class="timeline-event timeline-event-bottom animate-on-scroll">
-                    <div class="timeline-date" data-lang-key="eduHighSchoolDate">2019 - 2022</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content text-white">
-                        <h5 class="mb-1" style="color: var(--custom-green);" data-lang-key="eduHighSchoolName">SMA Negeri 23 Jakarta</h5>
-                        <small class="text-secondary" data-lang-key="eduHighSchoolMajor">Ilmu Pengetahuan Sosial</small>
-                    </div>
-                </div>
-                <div class="timeline-event timeline-event-top animate-on-scroll">
-                    <div class="timeline-date" data-lang-key="eduUniDate">2022 - Sekarang</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content text-white">
-                        <h5 class="mb-1" style="color: var(--custom-green);" data-lang-key="eduUniName">Universitas Gunadarma</h5>
-                        <small class="text-secondary" data-lang-key="eduUniMajor">Sistem Informasi</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-  <!--Sertifikasi-->
-  <div class="container mt-5 text-white">
-    <h4 class="text-center mb-5 fw-bold text-uppercase animate-on-scroll tag-card" data-lang-key="certificatesTitle">Sertifikat</h4>
-
-    <div class="certificate-list text-start">
-      
-      <div class="certificate-item animate-on-scroll">
-        <h6 class="text-secondary mb-1" data-lang-key="certGundarOrg">Universitas Gunadarma</h6>
-        <h5 class="fw-semibold mb-3" data-lang-key="certGundarTitle">JavaScript Programming Language Fundamental</h5>
-      </div>
-      
-      <div class="certificate-item animate-on-scroll">
-        <h6 class="text-secondary mb-1" data-lang-key="certMySkillOrg">MySkill</h6>
-        <h5 class="fw-semibold mb-3" data-lang-key="certMySkillTitle">Introduction to UX research</h5>
-      </div>
-
-      </div>
+<body>
+  <div class="intro-container">
+    <h1 class="intro-text">
+      Hello, Welcome <br>
+      My Portfolio
+    </h1>
   </div>
 
-  <!-- Penjelasan Logo -->
-    
-  <section class="logo-section">
-        <div class="container">
-            <h4 class="text-center mb-5 fw-bold text-uppercase text-custom-green animate-on-scroll" data-lang-key="logoExplanationTitle">My Personal Logo</h4>
-            <div class="container my-5 text-white animate-on-scroll">
-                <div class="row align-items-center">
-                    <!-- Logo Image -->
-                    <div class="col-md-6 text-center mb-4 mb-md-0">
-                        <img src="assets/img/Logo/Frame 14.png" alt="Logo" class="img-fluid shadow w-50 w-md-75 w-lg-50 mx-auto d-block">
-                    </div>
-                    <!-- Text Explanation -->
-                    <div class="col-md-6">
-                        <p class="text-justify text-start" data-lang-key="logoExplanationContent">
-                            Logo ini merupakan representasi visual dari inisial nama saya, Rafly Fadriansyah Ramadhani, yang disingkat menjadi RFR. Desain logo mengusung konsep minimalis dan modern, yang sejalan dengan prinsip desain saya dalam bidang UI/UX: sederhana, fungsional, dan estetis.
-                            <br><br>
-                            Penggunaan bentuk huruf yang tegas dan simetris mencerminkan konsistensi, profesionalisme, dan struktur berpikir sistematis karakter yang penting dalam dunia desain dan pengembangan sistem informasi. Potongan garis diagonal pada huruf tengah menambahkan nuansa dinamis dan futuristik, menunjukkan kemauan untuk terus berkembang dan berinovasi.
-                            <br><br>
-                            Warna biru tua dipilih untuk memberikan kesan stabilitas, kepercayaan, dan ketegasan, yang merefleksikan pendekatan saya dalam menyelesaikan proyek: fokus, terarah, dan bertanggung jawab.
-                            <br><br>
-                            Secara keseluruhan, logo ini bukan hanya lambang identitas personal, tetapi juga sebuah pernyataan visual tentang gaya kerja dan nilai profesional yang saya pegang dalam dunia desain digital.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-  <div class="text-center py-5 animate-on-scroll">
-    <a href="portofolio.html" class="text-decoration-none skill-card">
-      <button class="btn glass-button">
-        <div style="color: #BDC4D4;">
-          <h5 class="mb-1 fw-semibold" data-lang-key="viewPortfolioBtn">View Portfolio UI UX</h5>
-          <small data-lang-key="viewPortfolioDesc">Click to explore</small>
-        </div>
-      </button>
-    </a>
-
-    <a href="https://www.instagram.com/rafadhan_19" class="text-decoration-none">
-      <button class="btn glass-button">
-        <div style="color: #BDC4D4;">
-          <h5 class="mb-1 fw-semibold" data-lang-key="viewPortfoliofotografiBtn"">View Portfolio Fotografi</h5>
-          <small data-lang-key="viewPortfoliofotografiDesc">Click to explore</small>
-        </div>
-      </button>
-    </a>
-  </div>
-
-<footer class="bg-light py-4 rounded animate-on-scroll">
-  <div class="container text-center">
-    <h5 class="text-dark mb-4" data-lang-key="followMeTitle">Follow Me</h5>
-    <div class="d-flex justify-content-center gap-4">
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/rafly.f.ramadhani?locale=id_ID" target="_blank" title="Facebook">
-        <img src="assets/img/facebookdark.png" alt="Facebook" width="32" height="32">
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/rafadhan_19/" target="_blank" title="Instagram">
-        <img src="assets/img/instagramdark.png" alt="Instagram" width="34" height="34">
-      </a>
-
-      <!-- GitHub -->
-      <a href="https://github.com/rafly1911" target="_blank" title="GitHub">
-        <img src="assets/img/githubdark.png" alt="GitHub" width="32" height="32">
-      </a>
-    </div>
-  </div>
-</footer>
-
-<!-- Copyright -->
-<div class="text-center p-3 text-white">
-  <span data-lang-key="copyrightText">© 2025 Copyright:</span>
-  <a class="text-white text-decoration-none" href="https://www.instagram.com/rafadhan_19/" target="_blank">
-    Rafly Fadriansyah Ramadhani
-  </a>
-</div>
-
-  <!-- Anime.js -->
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
-
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Manual JS -->
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/home-animation.js"></script>
-  <script src="assets/Js/navbar.js"></script>
-  <!-- New Language Switcher JS -->
-  <script src="assets/js/language-switcher.js"></script>
   <script>
-  const texts = document.querySelectorAll(".dropping-texts div");
-  let index = 0;
+    // Setelah 3 detik, jalankan fade-out
+    setTimeout(() => {
+      document.body.classList.add("fade-out");
 
-  setInterval(() => {
-      texts[index].classList.remove("active");
-      index = (index + 1) % texts.length;
-      texts[index].classList.add("active");
-  }, 2000);
+      // Tunggu 1 detik (durasi fade) lalu redirect
+      setTimeout(() => {
+        window.location.href = "home.html";
+      }, 1000);
+    }, 3000);
   </script>
-
 </body>
 </html>
